@@ -25,17 +25,16 @@ export default function SocialIcons() {
   }, []);
 
   return (
-    <main className='bg-black'>
-      <h1>Homepage</h1>
+    <main className='flex items-center gap-4'>
       {socialItems.map((item) => (
-        <div key={item._id} >
-            <Link target='_blank' href={item.link} className='flex'>
+        <div key={item._id} className="">
+            <Link target='_blank' href={item.link} className=''>
           <Image
             src={item.mainImage}
             alt={item.alt}
             width={24}
             height={24}
-            className='object-contain cursor-pointer'
+            className='object-cover w-full h-full cursor-pointer'
           />
           </Link>
         </div>
