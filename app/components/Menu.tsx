@@ -19,7 +19,7 @@ export default function Menu() {
     <main>
       <h1>Homepage</h1>
       {items.map((item) => (
-        <div key={item.id}>
+        <div key={item._id}>
           {item.title}
           <Image
             src={item.mainImage}

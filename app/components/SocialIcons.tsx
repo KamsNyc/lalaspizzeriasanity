@@ -14,13 +14,13 @@ export default function SocialIcons() {
     };
 
     fetchData();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []);
 
   return (
     <main className='bg-black'>
       <h1>Homepage</h1>
       {socialItems.map((item) => (
-        <div key={item.id} >
+        <div key={item._id} >
             <Link target='_blank' href={item.link} className='flex'>
           <Image
             src={item.mainImage}
