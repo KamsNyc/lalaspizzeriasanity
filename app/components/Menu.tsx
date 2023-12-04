@@ -26,9 +26,9 @@ export default function Menu() {
     <main className='flex flex-col items-center'>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-rows-2">
       {items.map((item) => (
-      <div className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
+      <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
         {/* CARD */}
-          <div key={item._id} className="items-center text-center">
+          <div  className="items-center text-center">
             {/* MENU IMAGE CONTAINER*/}
             <div className="h-[220px] w-full flex items-center justify-center overflow-hidden">
               {/* MENU IMAGE  */}
