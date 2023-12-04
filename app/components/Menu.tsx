@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { getMenuItems } from '@/sanity/sanity-utils';
+import { getMenuItems } from '@/sanity/lib/menu-utils';
 
 export default function Menu() {
   const [items, setItems] = useState([]);

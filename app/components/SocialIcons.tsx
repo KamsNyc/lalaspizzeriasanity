@@ -21,12 +21,12 @@ export default function SocialIcons() {
       <h1>Homepage</h1>
       {socialItems.map((item) => (
         <div key={item.id} >
-            <Link target='_blank' href={item.link}>
+            <Link target='_blank' href={item.link} className='flex'>
           <Image
             src={item.mainImage}
             alt={item.alt}
-            width={14}
-            height={14}
+            width={24}
+            height={24}
             className='object-contain cursor-pointer'
           />
           </Link>

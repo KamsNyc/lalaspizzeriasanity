@@ -10,6 +10,7 @@ export default function Home() {
     {/* <AnnouncementBar /> */}
 
     <SocialIcons />
+    <Menu />
 
    </main>
   )
