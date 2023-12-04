@@ -9,6 +9,7 @@ interface SocialItems {
   title: string;
   mainImage: string;
   alt: string;
+  link: string;
 }
 
 export default function SocialIcons() {
