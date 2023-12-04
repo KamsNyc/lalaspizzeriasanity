@@ -4,8 +4,15 @@ import Image from 'next/image';
 import { getSocialIcons } from '../../sanity/lib/socials-utils';
 import Link from 'next/link';
 
+interface SocialItems {
+  _id: string;
+  title: string;
+  mainImage: string;
+  alt: string;
+}
+
 export default function SocialIcons() {
-  const [socialItems, setsocialItems] = useState([]);
+  const [socialItems, setsocialItems] = useState<SocialItems[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {

@@ -3,8 +3,15 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { getMenuItems } from '@/sanity/lib/menu-utils';
 
+interface MenuItem {
+  _id: string;
+  title: string;
+  mainImage: string;
+  slug: string;
+}
+
 export default function Menu() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<MenuItem[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
