@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { DM_Sans, Inter, Playfair_Display } from 'next/font/google'
+import {Inter, Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = DM_Sans({ subsets: ['latin'] })
+const inter = Poppins({ subsets: ['latin'], weight: ['100', '200', '300','400','500','600', '700', '800', '900'] })
 
 
 export const metadata: Metadata = {

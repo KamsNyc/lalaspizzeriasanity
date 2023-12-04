@@ -5,13 +5,15 @@ import SocialIcons from './components/SocialIcons'
 
 export default function Home() {
   return (
-   <main>
+   <main className="">
+    {/* PADDING X */}
+    <div className="px-4 lg:px-[120px] 2xl:px-[240px]">
     {/* ANNOUNCMENT BAR */}
-    {/* <AnnouncementBar /> */}
+    {/* <AnnouncementBar />
 
-    <SocialIcons />
+    <SocialIcons /> */}
     <Menu />
-
+    </div>
    </main>
   )
 }
