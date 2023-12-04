@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`relative h-full antialiased overflow-x-hidden ${inter.className}`}>{children}</body>
     </html>
   )
 }

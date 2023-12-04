@@ -5,7 +5,7 @@ import SocialIcons from './components/SocialIcons'
 
 export default function Home() {
   return (
-   <main className="">
+   <main className="relative">
      <AnnouncementBar />
     {/* PADDING X */}
     <div className="px-4 lg:px-[120px] 2xl:px-[240px]">
