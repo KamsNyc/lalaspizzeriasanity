@@ -1,0 +1,37 @@
+'use client'
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { getSocialIcons } from '../../sanity/lib/socials-utils';
+import Link from 'next/link';
+
+export default function SocialIcons() {
+  const [socialItems, setsocialItems] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const socialIcons = await getSocialIcons();
+      setsocialItems(socialIcons);
+    };
+
+    fetchData();
+  }, []); // Empty dependency array means this effect runs once on mount
+
+  return (
+    <main className='bg-black'>
+      <h1>Homepage</h1>
+      {socialItems.map((item) => (
+        <div key={item.id} >
+            <Link target='_blank' href={item.link}>
+          <Image
+            src={item.mainImage}
+            alt={item.alt}
+            width={14}
+            height={14}
+            className='object-contain cursor-pointer'
+          />
+          </Link>
+        </div>
+      ))}
+    </main>
+  );
+}
