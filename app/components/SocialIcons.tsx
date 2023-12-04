@@ -25,10 +25,10 @@ export default function SocialIcons() {
   }, []);
 
   return (
-    <main className='flex items-center gap-4'>
+    <main className='flex items-center gap-4 w-full h-full'>
       {socialItems.map((item) => (
         <div key={item._id} className="">
-            <Link target='_blank' href={item.link} className=''>
+            <Link target='_blank' href={item.link}>
           <Image
             src={item.mainImage}
             alt={item.alt}
