@@ -30,7 +30,7 @@ export default function Menu() {
         {/* CARD */}
           <div  className="items-center text-center">
             {/* MENU IMAGE CONTAINER*/}
-            <div className="h-[220px] w-[292px] flex items-center justify-center rounded-[10px] overflow-hidden">
+            <div className="w-full h-[220px] md:h-[220px] md:w-[292px] flex items-center justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
      
           <Image
