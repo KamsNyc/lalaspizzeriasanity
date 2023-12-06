@@ -26,7 +26,7 @@ export default function HeroImage() {
   }, []);
 
   return (
-    <section className='flex items-center w-full max-h-[480px] overflow-hidden rounded-xl'>
+    <section className='flex items-center w-full max-h-[480px] overflow-hidden  rounded-xl'>
       {heroImage.map((item) => (
         <div key={item._id} className="">
           <Image

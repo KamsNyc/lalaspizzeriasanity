@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className="border">
       {/* LEFT TEXT/RIGHT IMAGE */}
-      <div className="md:flex item-center md:max-h-[480px] gap-[8px] md:gap-[4px]">
+      <div className="md:flex item-center md:max-h-[480px] gap-[8px] md:gap-[4px]md:pt-[50px] md:pb-[80px]">
         {/* LEFT SIDE TEXT */}
         <div className="h-1/2 md:h-full md:w-1/2">
           <div className="flex h-full flex-col justify-center">
@@ -23,7 +23,7 @@ function HeroSection() {
               rel="noopener noreferrer"
               className="text-[15px] font-bold text-white red px-[20px] md:px-[50px] py-[16px] md:py-[12px] rounded-[10px]"
             >
-              View Menu
+              In Store Menu
             </Link>
 
             <Link
@@ -36,15 +36,16 @@ function HeroSection() {
             </Link>
           </div>  
           {/* QUICK REVIEW PROOF CONTAINER */}
-          <div className="mt-[24px] ml-[16px]">
-            <p>moe promotions on</p>
+          <div className="mt-[24px] ml-[16px] py-1">
+            <p>find our deals here <Link href={'/deals'} className="text-blue-500 hover:underline hover:cursor-pointer italic">click me</Link></p>
+            <p>find our catering menu here <Link href={'/catering'} className="text-blue-500 hover:underline hover:cursor-pointer italic">click me</Link></p>
           </div>
 
           </div>
         </div>
         {/* RIGHT SIDE TEXT */}
-        <div className="h-1/2 md:h-full md:w-1/2 my-[32px] md:my-0">
-          <div className="w-full h-full flex items-center justify-center">
+        <div className="h-1/2 md:h-full md:w-1/2">
+          <div className="w-full h-full py-[32px] md:h-[480px] flex items-center justify-center">
           <HeroImage />
           </div>
         </div>

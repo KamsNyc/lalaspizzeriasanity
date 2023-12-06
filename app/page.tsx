@@ -12,6 +12,10 @@ export default function Home() {
         <HeroSection />
       </section>
 
+      {/* MENU CONTAINER  */}
+      <section>
+        <Menu />
+      </section>
 
    </main>
   )
