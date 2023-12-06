@@ -30,7 +30,7 @@ export default function Menu() {
         {/* CARD */}
           <div  className="items-center text-center">
             {/* MENU IMAGE CONTAINER*/}
-            <div className="h-[220px] w-full flex items-center justify-center overflow-hidden">
+            <div className="h-[220px] w-[292px] flex items-center justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
      
           <Image
@@ -38,7 +38,7 @@ export default function Menu() {
              alt={item.slug}
              width={296}
              height={220}
-             className='rounded-[10px] object-cover'
+             className='rounded-[10px] object-cover w-full h-full overflow-hidden'
            />
    
            </div>
@@ -48,11 +48,11 @@ export default function Menu() {
               {/* MENU ITEM HEADING DESCRIPTION */}
         <h1 className='text-[#090909] text-[24px] font-bold'>{item.title}</h1>
            {/* SHORT DESCRIPTION */}
-           <p className='text-[14px] leading-[22px] sans pt-[12px]'>Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</p>
+           <p className='text-[14px] leading-[22px] sans pt-[8px]'>Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</p>
            </div>
 
            {/* PRICE/SIZE CONTAINER */}
-           <div className="pt-[32px]">
+           <div className="pt-[16px]">
               {/* MEDIUM SIZE/PRICE CONTAINER */}
                 <div className="flex flex-1 items-center justify-between px-[24px] py-[12px]">
                   <h1 className='text-[18px] font-bold'>$12</h1>

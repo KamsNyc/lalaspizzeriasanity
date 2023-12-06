@@ -6,7 +6,9 @@ import post from './schemas/post'
 import author from './schemas/author'
 import socials from './schemas/socials'
 import menu from './schemas/menu'
+import icons from './schemas/icon'
+import heroImage from './schemas/image'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, author, category, blockContent, socials, menu],
+  types: [post, author, category, blockContent, socials, menu, icons, heroImage],
 }

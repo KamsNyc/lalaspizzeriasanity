@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import {Inter, Poppins } from 'next/font/google'
 import './globals.css'
+import NavigationBar from './components/NavigationBar'
+import AnnouncementBar from './components/AnnouncementBar'
 
 const inter = Poppins({ subsets: ['latin'], weight: ['100', '200', '300','400','500','600', '700', '800', '900'] })
 
@@ -17,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`relative h-full antialiased overflow-x-hidden ${inter.className}`}>{children}</body>
+      <body className={`relative h-full antialiased overflow-x-hidden ${inter.className}`}>
+      <AnnouncementBar />
+         <NavigationBar />
+        {children}
+        
+        </body>
+
     </html>
   )
 }

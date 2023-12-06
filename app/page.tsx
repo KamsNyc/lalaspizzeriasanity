@@ -1,20 +1,18 @@
 import Image from 'next/image'
 import Menu from './components/Menu'
 import AnnouncementBar from './components/AnnouncementBar'
-import SocialIcons from './components/SocialIcons'
+import HeroSection from './components/HeroSection'
 
 export default function Home() {
   return (
    <main className="">
-     <AnnouncementBar />
-    {/* PADDING X */}
-    <div className="px-4 lg:px-[120px] 2xl:px-[240px]">
-    {/* ANNOUNCMENT BAR */}
-  
+    {/* ACCOUNCEMENT BAR/NAVIGATION BAR IN LAYOUT PAGE */}
+      {/* HERO CONTAINER*/}
+      <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+        <HeroSection />
+      </section>
 
-    {/* <SocialIcons /> */}
-    {/* <Menu /> */}
-    </div>
+
    </main>
   )
 }

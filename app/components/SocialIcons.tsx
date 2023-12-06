@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getSocialIcons } from '../../sanity/lib/socials-utils';
 import Link from 'next/link';
 
+
 interface SocialItems {
   _id: string;
   title: string;
@@ -25,7 +26,7 @@ export default function SocialIcons() {
   }, []);
 
   return (
-    <main className='flex items-center gap-4 w-full h-full'>
+    <section className='flex items-center gap-4 w-full h-full'>
       {socialItems.map((item) => (
         <div key={item._id} className="">
             <Link target='_blank' href={item.link}>
@@ -39,6 +40,6 @@ export default function SocialIcons() {
           </Link>
         </div>
       ))}
-    </main>
+    </section>
   );
 }
