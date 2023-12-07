@@ -8,6 +8,7 @@ interface MenuItem {
   title: string;
   mainImage: string;
   alt: string;
+  categories: { title: string }[];
 }
 
 export default function MenuItemCard({ category }: { category: string }) {
