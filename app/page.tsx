@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import Menu from './components/Menu'
+import MenuItemCard from './components/MenuItemCard'
 import AnnouncementBar from './components/AnnouncementBar'
 import HeroSection from './components/HeroSection'
+import Menu from './components/Menu'
 
 export default function Home() {
   return (
@@ -13,8 +14,10 @@ export default function Home() {
       </section>
 
       {/* MENU CONTAINER  */}
-      <section>
-        <Menu />
+      <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+      <Menu />
+      
+        
       </section>
 
    </main>

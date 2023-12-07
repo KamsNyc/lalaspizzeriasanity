@@ -14,7 +14,6 @@ interface HeroImages {
 
 export default function HeroImage() {
   const [heroImage, setheroImage] = useState<HeroImages[]>([]);
-  console.log(heroImage)
 
   useEffect(() => {
     const fetchHeroImage = async () => {
