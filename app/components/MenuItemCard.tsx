@@ -31,7 +31,7 @@ export default function MenuItemCard({category}) {
   }, [category]);
 
   return (
-    <main className='flex flex-col items-center'>
+    <main className='flex flex-col items-center md:mt-[32px]'>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-rows-2">
       {items && items.map((item) => (
       <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">

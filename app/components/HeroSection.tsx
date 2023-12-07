@@ -5,7 +5,7 @@ import HeroImage from "./HeroImage";
 
 function HeroSection() {
   return (
-    <div className="border">
+    <div className="md:pt-[50px] md:pb-[32px]">
       {/* LEFT TEXT/RIGHT IMAGE */}
       <div className="md:flex item-center md:max-h-[480px] gap-[8px] md:gap-[4px]md:pt-[50px] md:pb-[80px]">
         {/* LEFT SIDE TEXT */}
