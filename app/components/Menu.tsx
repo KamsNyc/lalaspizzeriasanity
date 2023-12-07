@@ -39,8 +39,8 @@ export default function Menu() {
           <div
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`cursor-pointer px-4 py-1 rounded-[10px] ${
-              category === activeCategory ? 'red text-white' : ''
+            className={`cursor-pointer px-2 py-1 rounded-[10px] ${
+              category === activeCategory ? 'red text-white' : 'border'
             }`}
           >
             {category}
