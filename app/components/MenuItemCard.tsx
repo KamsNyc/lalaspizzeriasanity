@@ -10,7 +10,7 @@ interface MenuItem {
   alt: string;
 }
 
-export default function MenuItemCard({category}) {
+export default function MenuItemCard({ category }: { category: string }) {
 
   const [items, setItems] = useState<MenuItem[]>([]);
 
