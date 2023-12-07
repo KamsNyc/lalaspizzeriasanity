@@ -16,14 +16,16 @@ export default function MenuItemCard({ category }: { category: string }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const menuItems = await getMenuItems();
+      const menuItems: MenuItem[] = await getMenuItems();
   
       // Filter items based on the category prop
       const filteredItems =
         category && category !== 'All'
-          ? menuItems.filter(item => item.categories && item.categories.some(cat => cat.title === category))
+          ? menuItems.filter(item =>
+              item.categories && item.categories.some(cat => cat.title === category)
+            )
           : menuItems;
-
+  
       setItems(filteredItems);
     };
   
