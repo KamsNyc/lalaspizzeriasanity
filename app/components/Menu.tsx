@@ -35,18 +35,17 @@ export default function Menu() {
       
       {/* FILTER */}
       <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[32px] flex gap-x-2 whitespace-nowrap">
-      {menuCategories.map((menuCategory) => (
-  <div
-    key={menuCategory}
-    onClick={() => setActiveCategory(menuCategory)}
-    className={`cursor-pointer px-4 py-1 rounded-[10px] ${
-      menuCategory === activeCategory ? 'red text-white' : ''
-    }`}
-  >
-    {menuCategory}
-  </div>
-))}
-This way, you
+        {menuCategories.map((category) => (
+          <div
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`cursor-pointer px-4 py-1 rounded-[10px] ${
+              category === activeCategory ? 'red text-white' : ''
+            }`}
+          >
+            {category}
+          </div>
+        ))}
       </div>
 
       {/* MENU ITEMS */}
