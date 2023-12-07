@@ -35,7 +35,7 @@ export default function Menu() {
   return (
     <div>
       {/* TABS */}
-      <Tabs defaultValue={menuCategories[0]} className="w-full">
+      <Tabs defaultValue={'All'} className="w-full">
         <TabsList>
           {menuCategories && menuCategories.map((category) => (
             <TabsTrigger key={category} value={category} onClick={() => setActiveCategory(category)}>

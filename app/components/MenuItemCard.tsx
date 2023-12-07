@@ -36,7 +36,7 @@ export default function MenuItemCard({category}) {
       {items && items.map((item) => (
       <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
         {/* CARD */}
-          <div  className="items-center text-center">
+          <div  className="items-center text-center border rounded-[10px]">
             {/* MENU IMAGE CONTAINER*/}
             <div className="w-full h-[220px] md:h-[220px] md:w-[292px] flex items-center justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
@@ -61,7 +61,7 @@ export default function MenuItemCard({category}) {
            </div>
 
            {/* PRICE/SIZE CONTAINER */}
-           <div className="">
+           <div className="bo">
               {/* MEDIUM SIZE/PRICE CONTAINER */}
                 <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
                   <h1 className='text-[18px] font-bold'>$12</h1>
