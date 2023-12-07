@@ -1,15 +1,7 @@
 'use client'
-import { useState, useEffect } from 'react';
-import { getMenuItems } from '@/sanity/lib/menu-utils';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from 'react';
 import MenuItemCard from './MenuItemCard';
-
-interface MenuItem {
-  _id: string;
-  title: string;
-  mainImage: string;
-  slug: string;
-}
+import category from '@/sanity/schemas/category';
 
 export default function Menu() {
   const menuCategories = [
@@ -33,20 +25,26 @@ export default function Menu() {
   const [activeCategory, setActiveCategory] = useState(menuCategories[0]);
 
   return (
-    <div>
-      {/* TABS */}
-      <Tabs defaultValue={'All'} className="w-full">
-        <TabsList>
-          {menuCategories && menuCategories.map((category) => (
-            <TabsTrigger key={category} value={category} onClick={() => setActiveCategory(category)}>
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-        <TabsContent value={activeCategory}>
-          <MenuItemCard category={activeCategory} />
-        </TabsContent>
-      </Tabs>
+    <div className="flexlg:flex-row">
+      {/* FILTER */}
+      <div className="lg:w-1/10 overflow-y-auto border-r p-4 md:mt-[32px] flex whitespace-nowrap">
+        {menuCategories.map((category) => (
+          <div
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`cursor-pointer px-4 py-1 rounded-[10px] ${
+              category === activeCategory ? 'red text-white' : ''
+            }`}
+          >
+            {category}
+          </div>
+        ))}
+      </div>
+
+      {/* MENU ITEMS */}
+      <div className="w-full">
+        <MenuItemCard category={activeCategory} />
+      </div>
     </div>
   );
 }
