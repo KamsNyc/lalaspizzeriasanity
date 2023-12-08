@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 import MenuItemCard from './MenuItemCard';
-import category from '@/sanity/schemas/category';
 
 export default function Menu() {
   const menuCategories = [

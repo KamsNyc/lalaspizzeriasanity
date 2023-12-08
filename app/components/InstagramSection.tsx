@@ -1,9 +1,9 @@
 "use client";
-import { INSTAGRAM_KEY } from '../../config'
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { getKey  } from '../../sanity/lib/key-utils';
 
 interface InstagramInterface {
   id: string,
@@ -19,6 +19,8 @@ interface InstagramInterface {
 
 function InstagramSection() {
   const [instagramData, setInstagramData] = useState<InstagramInterface[]>([]);
+  const [instagramKey, setInstagramKey] = useState<string | null>(null);
+
 
   function formatTimestamp(timestamp: number) {
     const date = new Date(timestamp);
@@ -31,12 +33,18 @@ function InstagramSection() {
   useEffect(() => {
     const fetchInstagramData = async () => {
       try {
-        const response = await fetch(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${INSTAGRAM_KEY}`
-        );
-        const data = await response.json();
-        setInstagramData(data.data);
-        console.log(data.data);
+        const key = await getKey();
+        setInstagramKey(key);
+
+        if (key) {
+          const response = await fetch(
+            `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${key}`
+          );
+
+          const data = await response.json();
+          setInstagramData(data.data);
+          console.log(data.data);
+        }
       } catch (error) {
         console.error("Error fetching Instagram data:", error);
       }
