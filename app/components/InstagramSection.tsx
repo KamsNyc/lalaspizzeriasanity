@@ -20,7 +20,7 @@ function InstagramSection() {
     const fetchInstagramData = async () => {
       try {
         const response = await fetch(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=IGQWRNS1BSTy1UT05JZA25nNzYxOTNmRXpPWlVaWDBsMEVXYWRFRFQ1NjJ5RDIyQ25HbG8xRHRXSDRNOGEzWHNRVjR6WXJnQVNVeHNZAVmxXekk0NXFoOEtXRmwzY2RnazROUWtveG84RGxsTmQ4bG5VbVlXdHY1SEEZD`
+          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${process.env.INSTAGRAM_KEY}`
         );
         const data = await response.json();
         setInstagramData(data.data);
@@ -74,14 +74,14 @@ function InstagramSection() {
                   alt={item.caption}
                   width={500}
                   height={590}
-                  className="h-full w-full md:max-w-[320px] md:max-h-[590px] overflow-hidden object-cover rounded-xl"
+                  className="h-full w-full md:max-w-[300px] 2xl:max-w-[320px] md:max-h-[590px] overflow-hidden object-cover rounded-xl"
                 />
 
                 {/* ABSOULUTE TIMESTAMP */}
                 <span className="text-[14px] text-white absolute top-3 left-0 font-medium w-full">
                   <div className="flex items-center justify-between px-2">
                     <p className="font-bold">POSTED {formatTimestamp(item.timestamp)}</p>
-                    <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center hover:cursor-pointer hover:scale-115 duration-150 ease-in-out"><FaExternalLinkAlt /></div>
+                    <Link target="_blank" href={item.permalink} className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center hover:cursor-pointer hover:scale-115 duration-150 ease-in-out"><FaExternalLinkAlt /></Link>
                   </div>
                   
                 </span>
