@@ -1,5 +1,5 @@
 "use client";
-
+import { INSTAGRAM_KEY } from '../../config'
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -21,7 +21,7 @@ function InstagramSection() {
   const [instagramData, setInstagramData] = useState<InstagramInterface[]>([]);
 
   function formatTimestamp(timestamp: number) {
-    const date = new Date(timestamp * 1000); // Convert seconds to milliseconds
+    const date = new Date(timestamp);
     const formattedDate = `${
       date.getMonth() + 1
     }/${date.getDate()}/${date.getFullYear()}`;
@@ -32,7 +32,7 @@ function InstagramSection() {
     const fetchInstagramData = async () => {
       try {
         const response = await fetch(
-          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${process.env.INSTAGRAM_KEY}`
+          `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${INSTAGRAM_KEY}`
         );
         const data = await response.json();
         setInstagramData(data.data);
