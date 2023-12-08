@@ -5,11 +5,23 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-function InstagramSection() {
-  const [instagramData, setInstagramData] = useState([]);
+interface InstagramInterface {
+  id: string,
+  media_url: string,
+  caption: string,
+  timestamp: number,
+  permalink: string,
+}
 
-  function formatTimestamp(timestamp) {
-    const date = new Date(timestamp);
+
+
+
+
+function InstagramSection() {
+  const [instagramData, setInstagramData] = useState<InstagramInterface[]>([]);
+
+  function formatTimestamp(timestamp: number) {
+    const date = new Date(timestamp * 1000); // Convert seconds to milliseconds
     const formattedDate = `${
       date.getMonth() + 1
     }/${date.getDate()}/${date.getFullYear()}`;
