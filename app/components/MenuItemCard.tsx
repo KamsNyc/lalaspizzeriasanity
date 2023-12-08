@@ -35,13 +35,13 @@ export default function MenuItemCard({ category }: { category: string }) {
 
   return (
     <main className='flex flex-col items-center md:mt-[32px]'>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-rows-2">
-      {items && items.map((item) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2">
+      {items && items.slice(0, 6).map((item) => (
       <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
         {/* CARD */}
           <div  className="items-center text-center border rounded-[10px]">
             {/* MENU IMAGE CONTAINER*/}
-            <div className="w-full h-[220px] md:h-[220px] md:w-[292px] flex items-center justify-center rounded-[10px] overflow-hidden">
+            <div className="h-[220px] md:h-[220px] md:w-[292px]  flex items-center justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
      
           <Image
@@ -56,11 +56,11 @@ export default function MenuItemCard({ category }: { category: string }) {
            </div>
 
            {/* HEADING CONTAINER */}
-           <div className="pt-[24px]">
+           <div className="pt-[24px] ">
               {/* MENU ITEM HEADING DESCRIPTION */}
         <h1 className='text-[#090909] text-[24px] font-bold'>{item.title}</h1>
            {/* SHORT DESCRIPTION */}
-           <p className='text-[14px] leading-[22px] sans pt-[8px]'>Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</p>
+           <p className='text-[14px] leading-[22px] sans pt-[8px] px-2 md:px-2'>Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</p>
            </div>
 
            {/* PRICE/SIZE CONTAINER */}

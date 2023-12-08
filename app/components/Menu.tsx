@@ -27,10 +27,10 @@ export default function Menu() {
   return (
     <div className="lg:flex-row">
         <div className=" flex flex-col items-center justify-center">
-        <h1 className=" text-center mt-[24px] md:mt-[30px] text-[48px] md:text-[64px] font-bold leading-[52px] md:leading-[72px]">
+        <h1 className=" text-center mt-[24px] md:mt-[100px] text-[48px] md:text-[64px] font-bold leading-[52px] md:leading-[72px]">
             Our Menu
           </h1>
-          <p className='max-w-[600px] text-center'>Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id nulla. Risus convallis iaculis risus ac aliquam sit ultricies. Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor egestas nam congue elit dolor.</p>
+          <p className='max-w-[625px] font-medium sans text-[17px] leading-6 mt-[8px] text-center'>Lacus lobortis nullam nam consectetur fermentum mattis pellentesque id nulla. Risus convallis iaculis risus ac aliquam sit ultricies. Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor egestas nam congue elit dolor.</p>
           </div>
       
       {/* FILTER */}
@@ -39,7 +39,7 @@ export default function Menu() {
           <div
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`cursor-pointer px-2 py-1 rounded-[10px] ${
+            className={`cursor-pointer px-2 py-1 font-medium rounded-[10px] ${
               category === activeCategory ? 'red text-white' : 'border'
             }`}
           >

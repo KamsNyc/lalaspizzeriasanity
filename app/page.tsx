@@ -3,6 +3,7 @@ import MenuItemCard from './components/MenuItemCard'
 import AnnouncementBar from './components/AnnouncementBar'
 import HeroSection from './components/HeroSection'
 import Menu from './components/Menu'
+import InstagramSection from './components/InstagramSection'
 
 export default function Home() {
   return (
@@ -16,8 +17,11 @@ export default function Home() {
       {/* MENU CONTAINER  */}
       <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
       <Menu />
-      
-        
+      </section>
+
+      {/* INSTAGRAM CONTAINER */}
+      <section className='px-2 lg:px-[80px] 2xl:px-[120px]'>
+          <InstagramSection />
       </section>
 
    </main>

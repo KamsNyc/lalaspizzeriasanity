@@ -12,7 +12,7 @@ function HeroSection() {
         <div className="h-1/2 md:h-full md:w-1/2">
           <div className="flex h-full flex-col justify-center">
           {/* HEADING */}
-          <h1 className=" mt-[24px] md:mt-[30px] text-[56px] md:text-[72px] font-bold leading-[60px] md:leading-[80px]">
+          <h1 className=" mt-[24px] md:mt-[30px] text-[52px] md:text-[72px] font-bold leading-[52px] md:leading-[80px]">
             Lalas Pizzeria<br></br>Free Delivery<br></br>Nearby
           </h1>
           {/* BUTTONS */}
