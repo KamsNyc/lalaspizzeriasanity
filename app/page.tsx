@@ -4,6 +4,7 @@ import AnnouncementBar from './components/AnnouncementBar'
 import HeroSection from './components/HeroSection'
 import Menu from './components/Menu'
 import InstagramSection from './components/InstagramSection'
+import OnlineApps from './components/OnlineApps'
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
           <InstagramSection />
       </section>
 
+      {/* ORDER THROUGH APP SECTION */}
+      <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+      <OnlineApps />
+      </section>
    </main>
   )
 }

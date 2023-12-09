@@ -9,6 +9,7 @@ interface InstagramInterface {
   id: string,
   media_url: string,
   caption: string,
+  media_type: string;
   timestamp: number,
   permalink: string,
 }
@@ -54,11 +55,11 @@ function InstagramSection() {
   }, []);
 
   return (
-    <div className="w-full h-full mt-[24px] md:mt-[100px]">
+    <div className="w-full h-full mt-[24px] md:mt-[80px]">
       {/* CONTAINER */}
       <div className="">
         {/* HEADING container*/}
-        <div className="flex items-center justify-evenly md:justify-between mb-[64px]">
+        <div className="flex items-center justify-evenly md:justify-between">
           {/* TAG LALASPIZZERIA */}
           <h1 className="text-[25px] md:text-[64px] font-bold leading-[52px] md:leading-[72px]">
             Tag{" "}
@@ -85,7 +86,7 @@ function InstagramSection() {
         {/* ------------ INSTAGRAM FETCHING SECTION ---------- */}
          
         {/* INSTAGRAM SLIDER PICTURES */}
-        <div className="w-full border md:flex items-center justify-evenly p-4 md:p-2 space-y-12 md:space-y-0">
+        <div className="w-full border md:flex items-center justify-evenly p-4 md:p-2 space-y-12 md:space-y-0 mt-[32px]">
           {instagramData.slice(0, 4).map((item) => (
             <div key={item.id} className="">
               <div className=" h-[250px] md:h-[550px] relative">

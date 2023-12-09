@@ -64,7 +64,7 @@ export default function MenuItemCard({ category }: { category: string }) {
            </div>
 
            {/* PRICE/SIZE CONTAINER */}
-           <div className="bo">
+           <div className="">
               {/* MEDIUM SIZE/PRICE CONTAINER */}
                 <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
                   <h1 className='text-[18px] font-bold'>$12</h1>
