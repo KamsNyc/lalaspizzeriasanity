@@ -11,7 +11,7 @@ function AnnouncementBar() {
         </div>
         {/* MIDDLE SIDE */}
         <div className="text-center md:flex items-center">
-            <p className='sans text-[14px] whitespace-nowrap font-light md:border-r border-[FFFFFF]/25 px-4 md:px-[24px]'>Opened daily 11:00AM - 10:00PM</p>
+            <p className='sans text-[14px] whitespace-nowrap md:border-r border-[FFFFFF]/25 px-4 md:px-[24px]'>Opened daily 11:00AM - 10:00PM</p>
 
             <p className='sans text-[14px] px-[8px] md:px-[24px] font-light'>(347) 426 5287</p>
           </div>

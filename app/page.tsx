@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import MenuItemCard from './components/MenuItemCard'
-import AnnouncementBar from './components/AnnouncementBar'
+
 import HeroSection from './components/HeroSection'
 import Menu from './components/Menu'
 import InstagramSection from './components/InstagramSection'
 import OnlineApps from './components/OnlineApps'
+import PromotionsGrid from './components/PromotionsGrid'
 
 export default function Home() {
   return (
@@ -26,9 +25,16 @@ export default function Home() {
       </section>
 
       {/* ORDER THROUGH APP SECTION */}
-      <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+      <section className=''>
       <OnlineApps />
       </section>
+
+      {/* DEALS/CATERING/SCHOOL DEALS/ALL */}
+      <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
+        <PromotionsGrid />
+      </section>
+
+      
    </main>
   )
 }

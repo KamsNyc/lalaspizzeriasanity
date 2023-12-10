@@ -40,7 +40,10 @@ function NavigationBar() {
               Menu
             </Link>
             <Link className="text-[15px] font-bold" href={"/deals"}>
-              Promotions
+              Deals
+            </Link>
+            <Link className="text-[15px] font-bold" href={"/blog"}>
+              Catering
             </Link>
             <Link className="text-[15px] font-bold" href={"/blog"}>
               Blog

@@ -62,7 +62,7 @@ function InstagramSection() {
         <div className="flex items-center justify-evenly md:justify-between">
           {/* TAG LALASPIZZERIA */}
           <h1 className="text-[25px] md:text-[64px] font-bold leading-[52px] md:leading-[72px]">
-            Tag{" "}
+            Tag
             <Link
               target="_blank"
               href={"https://www.instagram.com/lalaspizzeria/"}
@@ -86,7 +86,7 @@ function InstagramSection() {
         {/* ------------ INSTAGRAM FETCHING SECTION ---------- */}
          
         {/* INSTAGRAM SLIDER PICTURES */}
-        <div className="w-full border md:flex items-center justify-evenly p-4 md:p-2 space-y-12 md:space-y-0 mt-[32px]">
+        <div className="w-full md:flex items-center justify-evenly p-4 md:p-2 space-y-12 md:space-y-0 mt-[32px]">
           {instagramData.slice(0, 4).map((item) => (
             <div key={item.id} className="">
               <div className=" h-[250px] md:h-[550px] relative">
@@ -95,7 +95,7 @@ function InstagramSection() {
                   alt={item.caption}
                   width={500}
                   height={590}
-                  className="h-full w-full md:max-w-[300px] 2xl:max-w-[320px] md:max-h-[590px] overflow-hidden object-cover rounded-xl"
+                  className="h-full w-full md:max-w-[300px] 2xl:max-w-[320px] md:max-h-[590px] overflow-hidden object-cover rounded-sm"
                 />
 
                 {/* ABSOULUTE TIMESTAMP */}
@@ -108,7 +108,7 @@ function InstagramSection() {
                 </span>
 
                 {/* ABSOULUTE CAPTION BOX */}
-                <div className="absolute z-2 bottom-0 left-0 w-full h-[35%] md:h-[20%] bg-black/30 text-white p-4 text-center">
+                <div className="absolute z-2 bottom-0 left-0 w-full h-[35%] md:h-[20%] bg-black/30 text-white p-4 text-center rounded-b-[4px]">
                   <p className="sans leading-[20px]">{item.caption}</p>
                 </div>
                 

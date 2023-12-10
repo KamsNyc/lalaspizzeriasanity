@@ -36,7 +36,7 @@ function HeroSection() {
             </Link>
           </div>  
           {/* QUICK REVIEW PROOF CONTAINER */}
-          <div className="mt-[24px] ml-[16px] py-1">
+          <div className="mt-[24px] md:ml-[16px] py-1">
             <p>find our deals here <Link href={'/deals'} className="text-blue-500 hover:underline hover:cursor-pointer italic">click me</Link></p>
             <p>find our catering menu here <Link href={'/catering'} className="text-blue-500 hover:underline hover:cursor-pointer italic">click me</Link></p>
           </div>
