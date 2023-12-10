@@ -33,7 +33,6 @@ export default function HeroImage() {
             alt={item.alt}
             width={1000}
             height={900}
-            priority
             className='object-cover w-full h-full cursor-pointer'
           />
         </div>
