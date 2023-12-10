@@ -39,7 +39,7 @@ function PromotionsGrid() {
                     alt='test'
                     width={500}
                     height={500}
-                    className='opacity-75 hover:scale-125 duration-500 ease-in-out overflow-hidden w-[100px] h-[100px] md:w-[300px] md:h-[300px]'
+                    className='opacity-95 hover:scale-125 duration-500 ease-in-out overflow-hidden w-[100px] h-[100px] md:w-[300px] md:h-[300px]'
                     />
 
                      {/* HEADING */}
