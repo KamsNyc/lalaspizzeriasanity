@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import AllMenuItems from '../components/AllMenuItems'
+import MenuItemCard from '../components/MenuItemCard';
 
 export default function Menu() {
   const menuCategories = [
@@ -49,7 +49,7 @@ export default function Menu() {
 
       {/* MENU ITEMS */}
       <div className="w-full">
-        <AllMenuItems category={activeCategory} />
+        <MenuItemCard category={activeCategory} />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { getMenuItems } from '@/sanity/lib/menu-utils';
+import Link from 'next/link';
 
 interface MenuItem {
   _id: string;
@@ -39,7 +40,8 @@ export default function MenuItemCard({ category }: { category: string }) {
       {items && items.slice(0, 6).map((item) => (
       <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
         {/* CARD */}
-          <div  className="items-center text-center border rounded-[10px]">
+        <Link href={`/menu/${item._id}`}>
+          <div  className="items-center text-center border rounded-[10px] cursor-pointer hover:scale-105 hover:shadow-sm duration-500 ease-out">
             {/* MENU IMAGE CONTAINER*/}
             <div className="h-[220px] md:h-[220px] md:w-[292px]  flex items-center justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
@@ -75,11 +77,9 @@ export default function MenuItemCard({ category }: { category: string }) {
                   <h1 className='text-[18px] font-bold'>$17</h1>
                   <p className="sans text-[14px] text-[#090909] font-[400]">16 inch <span className="text-[#1B1B1B]">pie</span></p>
                 </div>
-           </div>
-
-        
-
+           </div> 
           </div>
+          </Link>
       </div>
       ))}
       </div>

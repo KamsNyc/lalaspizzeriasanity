@@ -43,7 +43,7 @@ function PromotionsGrid() {
                     />
 
                      {/* HEADING */}
-                   <div className="absolute top-1/2 w-full text-center translate-y-[-50%] bg-white/80 rounded-xl ">
+                   <div className="absolute top-1/2 w-full text-center translate-y-[-50%] yellow rounded-xl ">
                     <h1 className='font-bold text-red-500 text-[15px] md:text-[24px] px-4 whitespace-nowrap'>{item.text}</h1>
                     </div>
                 </div>

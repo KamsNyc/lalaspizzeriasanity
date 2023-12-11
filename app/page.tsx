@@ -4,6 +4,7 @@ import Menu from './components/Menu'
 import InstagramSection from './components/InstagramSection'
 import OnlineApps from './components/OnlineApps'
 import PromotionsGrid from './components/PromotionsGrid'
+import OrderOnline from './components/OrderOnline'
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
         <PromotionsGrid />
       </section>
 
-      
+      <OrderOnline />
    </main>
   )
 }

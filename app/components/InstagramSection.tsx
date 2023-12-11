@@ -74,7 +74,7 @@ function InstagramSection() {
           </h1>
           {/* BUTTON */}
           <div className="border-[3px] border-black px-3 md:px-6 py-1 md:py-2 rounded-full hover:bg-red-500 hover:text-white">
-            <Link
+            <Link target="_blank"
               href={"https://www.instagram.com/lalaspizzeria/"}
               className="flex items-center gap-2 "
             >
