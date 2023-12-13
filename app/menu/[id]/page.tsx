@@ -11,6 +11,8 @@ interface PageProps {
     return (
       <div>
         {id}
+        {/* add menu images */}
+        {/* allow user to add to cart?? */}
       </div>
     );
   }
