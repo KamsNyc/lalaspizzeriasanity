@@ -27,24 +27,24 @@ function PromotionsGrid() {
           </h1>
 
           {/* PROMOTIONS SLIDER */}
-          <div className="flex items-center justify-evenly  overflow-hidden mt-[32px] md:mt-[48px] cursor-pointer hover:scale-110 duration-500 ease-in-out">
+          <div className="flex items-center justify-evenly  overflow-hidden mt-[32px] md:mt-[48px] cursor-pointer duration-500 ease-in-out">
           {
             Promos && Promos.map((item,index) => (
                 <div key={index} className="flex items-center max-h-[200px] overflow-hidden rounded-full ">
                 {/* DEALS */}
-                <div className="relative ">
+                <div className="relative hover:scale-125 duration-500 ease-in-out border border-red-500">
                     {/* IMAGE */}
                     <Image 
                     src={item.url}
                     alt='test'
                     width={500}
                     height={500}
-                    className='opacity-95 hover:scale-125 duration-500 ease-in-out overflow-hidden w-[100px] h-[100px] md:w-[300px] md:h-[300px]'
+                    className='opacity-95 overflow-hidden w-[100px] h-[100px] md:w-[300px] md:h-[300px]'
                     />
 
                      {/* HEADING */}
                    <div className="absolute top-1/2 w-full text-center translate-y-[-50%] yellow rounded-xl ">
-                    <h1 className='font-bold text-red-500 text-[15px] md:text-[24px] px-4 whitespace-nowrap'>{item.text}</h1>
+                    <h1 className='font-bold text-red-500 text-[15px] md:text-[24px] px-1 whitespace-nowrap'>{item.text}</h1>
                     </div>
                 </div>
           </div>

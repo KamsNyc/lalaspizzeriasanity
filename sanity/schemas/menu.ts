@@ -24,6 +24,11 @@ export default defineType({
           }
     ),
     defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',

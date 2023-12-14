@@ -34,8 +34,6 @@ export default function Home() {
       <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
         <PromotionsGrid />
       </section>
-
-      <OrderOnline />
    </main>
   )
 }
