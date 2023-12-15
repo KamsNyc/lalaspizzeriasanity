@@ -17,7 +17,6 @@ export async function getMenuItemsById(itemId) {
         title,
         "mainImage": mainImage.asset->url,
         link,
-        description,
         "alt": mainImage.alt,
         _createdAt,
         _updatedAt,
