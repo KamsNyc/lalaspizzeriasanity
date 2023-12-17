@@ -25,14 +25,14 @@ function MenuHero({ itemId }: { itemId?: string }) {
 
   useEffect(() => {
     const fetchHeroImage = async () => {
-      if (itemId) {
-        const fetchedHeroImage = await getMenuItemsById(itemId as string);
+      if (typeof itemId === 'string') {
+        const fetchedHeroImage = await getMenuItemsById(itemId);
         setHeroImage(fetchedHeroImage);
       }
     };
-
+  
     fetchHeroImage();
-  }, [itemId as string]);
+  }, [itemId]);
 
   return (
     <div className="">
