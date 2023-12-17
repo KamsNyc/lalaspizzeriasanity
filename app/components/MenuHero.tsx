@@ -9,6 +9,7 @@ import Image from "next/image";
 
 // Import getMenuItems from the correct path
 import { getMenuItemsById } from "@/sanity/lib/menu-by-id";
+import Link from "next/link";
 
 // Define the MenuHeroItem interface
 interface MenuHeroItem {
@@ -19,21 +20,19 @@ interface MenuHeroItem {
   categories: { title: string }[];
 }
 
-// Correct the function name to use camelCase (setHeroImage)
-function MenuHero({ itemId }) {
-  // Correct the state name to use camelCase (heroImage)
+function MenuHero({ itemId }: { itemId?: string }) {
   const [heroImage, setHeroImage] = useState<MenuHeroItem[]>([]);
 
   useEffect(() => {
     const fetchHeroImage = async () => {
-      // Correct the variable name to use camelCase (fetchHeroImage)
-      const fetchedHeroImage = await getMenuItemsById(itemId);
-      // Correct the state update to use setHeroImage
-      setHeroImage(fetchedHeroImage);
+      if (itemId) {
+        const fetchedHeroImage = await getMenuItemsById(itemId);
+        setHeroImage(fetchedHeroImage);
+      }
     };
 
     fetchHeroImage();
-  }, [itemId]); // Add itemId as a dependency
+  }, [itemId]);
 
   return (
     <div className="">
@@ -54,7 +53,9 @@ function MenuHero({ itemId }) {
           <div className="w-full h-full">
             {/* Tags */}
             <div className="">
+            <Link href={`/menu`}>
               <Badge variant="destructive" className="yellow text-black">{item.categories[0].title}</Badge>
+              </Link>
             </div>
             {/* h1 title */}
             <div className="pt-[16px]">
@@ -68,7 +69,10 @@ function MenuHero({ itemId }) {
             </div>
 
             {/* DELIVERY APPS */}
+            <div className="mt-[32px]">
             <DeliveryApps />
+            </div>
+            
           </div>
         </div>
       ))}
