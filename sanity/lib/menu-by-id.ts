@@ -1,9 +1,9 @@
 import { createClient, groq } from 'next-sanity'
 import {apiVersion, dataset, projectId, useCdn} from '../env'
 
+// NOT USING THIS QUERY: USING ON COMPONENT ITSELF
 
-
-export async function getMenuItemsById(itemId) {
+export async function getMenuItemsById(itemId: string) {
     const client = createClient({
       apiVersion,
       dataset,

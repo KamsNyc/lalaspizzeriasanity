@@ -16,7 +16,7 @@ interface MenuHeroItem {
   categories: { title: string }[];
 }
 
-async function getMenuItemsById(itemId) {
+async function getMenuItemsById(itemId: string) {
   const client = createClient({
     apiVersion,
     dataset,
