@@ -25,12 +25,12 @@ function MenuHero({ itemId }: { itemId?: string }) {
 
   useEffect(() => {
     const fetchHeroImage = async () => {
-      if (typeof itemId === 'string') {
+      if (itemId) {
         const fetchedHeroImage = await getMenuItemsById(itemId);
         setHeroImage(fetchedHeroImage);
       }
     };
-  
+
     fetchHeroImage();
   }, [itemId]);
 
