@@ -26,13 +26,13 @@ function MenuHero({ itemId }: { itemId?: string }) {
   useEffect(() => {
     const fetchHeroImage = async () => {
       if (itemId) {
-        const fetchedHeroImage = await getMenuItemsById(itemId);
+        const fetchedHeroImage = await getMenuItemsById(itemId as string);
         setHeroImage(fetchedHeroImage);
       }
     };
 
     fetchHeroImage();
-  }, [itemId]);
+  }, [itemId as string]);
 
   return (
     <div className="">
