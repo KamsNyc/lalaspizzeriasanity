@@ -54,7 +54,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
             {/* Tags */}
             <div className="">
             <Link href={`/menu`}>
-              <Badge variant="destructive" className="yellow text-black">{item.categories[0].title}</Badge>
+              <Badge variant="destructive" className="yellow text-black">{item.categories ? item.categories[0].title : "Lalas Pizzeria"}</Badge>
               </Link>
             </div>
             {/* h1 title */}

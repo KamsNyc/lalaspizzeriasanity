@@ -3,7 +3,7 @@ import {apiVersion, dataset, projectId, useCdn} from '../env'
 
 
 
-export async function getMenuItemsById(itemId) {
+export async function getMenuItemsById({ itemId }: { itemId?: string }) {
     const client = createClient({
       apiVersion,
       dataset,
