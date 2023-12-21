@@ -5,6 +5,7 @@ import NavigationBar from './components/NavigationBar'
 import AnnouncementBar from './components/AnnouncementBar'
 import { Footer } from './components/Footer'
 import OrderOnline from './components/OrderOnline'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Poppins({ subsets: ['latin'], weight: ['100', '200', '300','400','500','600', '700', '800', '900'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
          <NavigationBar />
         {children}
         <OrderOnline />
+        <Toaster />
         </body>
         {/* <Footer /> */}
     </html>

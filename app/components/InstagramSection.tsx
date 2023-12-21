@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { getKey  } from '../../sanity/lib/key-utils';
 
+
 interface InstagramInterface {
   id: string,
   media_url: string,
@@ -109,7 +110,7 @@ function InstagramSection() {
 
                 {/* ABSOULUTE CAPTION BOX */}
                 <div className="absolute z-2 bottom-0 left-0 w-full h-[35%] md:h-[20%] bg-black/30 text-white p-4 text-center rounded-b-[4px]">
-                  <p className="sans leading-[20px]">{item.caption}</p>
+                  <p className="sans leading-[20px] overflow-hidden">{item.caption}</p>
                 </div>
                 
               </div>

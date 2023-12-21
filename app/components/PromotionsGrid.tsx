@@ -1,18 +1,31 @@
 import Image from 'next/image'
 import React from 'react'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 const Promos = [
     {
-        text: "Deals", url:"https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    
+        text: "Deals", 
+        url:"https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Current Deals"    
     },
     {
-        text: "Catering", url:"https://images.unsplash.com/photo-1606066889831-35faf6fa6ff6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    
+        text: "Catering", url:"https://images.unsplash.com/photo-1606066889831-35faf6fa6ff6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Current Deals"        
     },
     {
-        text: "School Deals", url:"https://images.unsplash.com/photo-1544880047-1966fc792a37?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    
+        text: "School Deals", url:"https://images.unsplash.com/photo-1544880047-1966fc792a37?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Current Deals"        
     },
     {
-        text: "All", url:"https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"    
+        text: "All", url:"https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description: "Current Deals"      
     },
 
 
@@ -27,11 +40,13 @@ function PromotionsGrid() {
           </h1>
 
           {/* PROMOTIONS SLIDER */}
-          <div className="flex items-center justify-evenly  overflow-hidden mt-[32px] md:mt-[48px] cursor-pointer duration-500 ease-in-out">
+          <div className="flex items-center justify-evenly  overflow-hidden my-[32px] md:my-[48px] cursor-pointer duration-500 ease-in-out">
           {
             Promos && Promos.map((item,index) => (
-                <div key={index} className="flex items-center max-h-[200px] overflow-hidden rounded-full ">
-                {/* DEALS */}
+                <div key={index} className="flex items-center max-h-[200px] overflow-hidden rounded-md ">
+                  {/* SIDEBAR TRIGGER */}
+                  <Sheet>
+  <SheetTrigger> {/* DEALS */}
                 <div className="relative hover:scale-125 duration-500 ease-in-out border border-red-500">
                     {/* IMAGE */}
                     <Image 
@@ -43,10 +58,20 @@ function PromotionsGrid() {
                     />
 
                      {/* HEADING */}
-                   <div className="absolute top-1/2 w-full text-center translate-y-[-50%] yellow rounded-xl ">
+                   <div className="absolute top-1/2 w-full text-center translate-y-[-50%] yellow rounded-md ">
                     <h1 className='font-bold text-red-500 text-[15px] md:text-[24px] px-1 whitespace-nowrap'>{item.text}</h1>
                     </div>
-                </div>
+                </div></SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle className='border-b text-[24px]'> {item.text} at Lala's Pizzeria</SheetTitle>
+      <SheetDescription>
+       11
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+               
           </div>
             ))
           }

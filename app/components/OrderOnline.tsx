@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {
     Tooltip,
@@ -5,9 +6,12 @@ import {
     TooltipProvider,
     TooltipTrigger,
   } from "@/components/ui/tooltip"
+import { useToast } from '@/components/ui/use-toast'
   
 
 function OrderOnline() {
+  const { toast } = useToast()
+
   return (
     
     <div className='fixed z-50 bottom-5 right-5'>
@@ -16,7 +20,13 @@ function OrderOnline() {
   <Tooltip>
     <TooltipTrigger>
         
-    <span className="bg-red-500 px-4 py-4 rounded-full font-bold text-white cursor-pointer" data-glf-cuid="ff20a1ac-2080-48fa-9d59-188660b7f6fd" data-glf-ruid="bb2f46b8-ab25-445c-ba2d-2319005612cb" >Click To Order</span>
+    <span onClick={()=> {
+       toast({
+        variant: 'destructive',
+        title: "You Are Ordering With Lalas Online Delivery",
+        description: "Order Free Delivery And Fee Free",
+      })
+    }} className="bg-red-500 px-4 py-4 rounded-full font-bold text-white cursor-pointer" data-glf-cuid="ff20a1ac-2080-48fa-9d59-188660b7f6fd" data-glf-ruid="bb2f46b8-ab25-445c-ba2d-2319005612cb" >Click To Order</span>
 <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>  
     </TooltipTrigger>
     <TooltipContent>

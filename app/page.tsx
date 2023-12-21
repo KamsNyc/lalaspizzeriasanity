@@ -5,6 +5,8 @@ import InstagramSection from './components/InstagramSection'
 import OnlineApps from './components/OnlineApps'
 import PromotionsGrid from './components/PromotionsGrid'
 import OrderOnline from './components/OrderOnline'
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+
 
 export default function Home() {
   return (
