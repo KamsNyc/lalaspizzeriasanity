@@ -7,7 +7,7 @@ function OnlineApps() {
         {/* LEFT SIDE TEXT */}
         <div className="w-full text-white">
             <h1 className='text-[54px] font-semibold leading-[50px]'>You can order<br></br>through apps</h1>
-            <p className=' mt-[24px] text-[17px] leading-[24px] sans w-full px-8 md:px-0 md:max-w-[446px]'>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
+            <p className=' mt-[24px] text-[17px] leading-[24px] sans w-full px-8 md:px-0 md:max-w-[546px]'>Enjoy the convenience of ordering your favorite dishes from Lalas Pizzeria with Uber Eats, Grubhub, Postmates, DoorDash, Slice, and Seamless. Try it now, brought right to your doorstep.</p>
             
         </div>
         {/* RIGHT SIDE IMAGES */}

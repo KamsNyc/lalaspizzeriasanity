@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import {
   Sheet,
   SheetContent,
@@ -13,8 +14,16 @@ const Promos = [
     {
         text: "Deals", 
         url:"https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        description: "Current Deals"    
-    },
+        description: (
+          <Alert className='mb-6 md:mb-12'>
+
+            <AlertTitle>AVALIABLE: SUNDAY - TUESDAY | 12PM - 4PM</AlertTitle>
+            <AlertDescription className=''>
+              <span><strong>BUY ANY 2 SLICES AND GET A SODA FOR FREE</strong></span>
+            </AlertDescription>
+          </Alert>
+        ),
+      },    
     {
         text: "Catering", url:"https://images.unsplash.com/photo-1606066889831-35faf6fa6ff6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         description: "Current Deals"        

@@ -6,6 +6,7 @@ import OnlineApps from './components/OnlineApps'
 import PromotionsGrid from './components/PromotionsGrid'
 import OrderOnline from './components/OrderOnline'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import AllPromotions from './components/AllPromotions'
 
 
 export default function Home() {
@@ -34,7 +35,8 @@ export default function Home() {
 
       {/* DEALS/CATERING/SCHOOL DEALS/ALL */}
       <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
-        <PromotionsGrid />
+        {/* <PromotionsGrid /> */}
+        <AllPromotions />
       </section>
    </main>
   )

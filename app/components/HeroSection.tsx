@@ -12,9 +12,10 @@ function HeroSection() {
         <div className="h-1/2 md:h-full md:w-1/2">
           <div className="flex h-full flex-col justify-center">
           {/* HEADING */}
-          <h1 className=" mt-[24px] md:mt-[30px] text-[52px] md:text-[72px] font-bold leading-[52px] md:leading-[80px]">
-            Lalas Pizzeria<br></br>Free Delivery<br></br>Nearby
+          <h1 className=" mt-[24px] md:mt-[30px] text-[47px] md:text-[60px] 2xl:text-[68px] font-bold leading-[52px] md:leading-[72px]">
+          Best Pizza in Queens Village, NY<br/>Lalas Pizzeria
           </h1>
+          <p className="mt-3">Enjoy mouth-watering pizza with free delivery in Queens Village, NY.</p>
           {/* BUTTONS */}
           <div className="mt-[24px] md:mt-[48px] flex items-center gap-[24px] md:gap-[32px]">
             <Link
