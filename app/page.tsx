@@ -7,6 +7,7 @@ import PromotionsGrid from './components/PromotionsGrid'
 import OrderOnline from './components/OrderOnline'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import AllPromotions from './components/AllPromotions'
+import { Footer } from './components/Footer'
 
 
 export default function Home() {
@@ -37,6 +38,11 @@ export default function Home() {
       <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
         {/* <PromotionsGrid /> */}
         <AllPromotions />
+      </section>
+
+      {/* FOOTER */}
+      <section>
+        <Footer />
       </section>
    </main>
   )
