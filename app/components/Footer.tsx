@@ -24,15 +24,11 @@ const MENU_LINKS = [
 const SOCIAL_LINKS = [
   {
     title: "Facebook",
-    link: "#", // Replace with your Facebook link
-  },
-  {
-    title: "Twitter",
-    link: "#", // Replace with your Twitter link
+    link: "https://www.facebook.com/profile.php?id=61551944973297",
   },
   {
     title: "Instagram",
-    link: "#", // Replace with your Instagram link
+    link: "https://www.instagram.com/lalaspizzeria/",
   },
 ];
 
@@ -40,7 +36,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <div className="bg-white dark:bg-gray-900 mt-[100px]">
+    <div className="bg-red-500 mt-[100px]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 md:mr-9">
@@ -50,11 +46,11 @@ export function Footer() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 space-x-4">
             <div>
-              <h2 className="mb-6 text-base font-bold text-gray-900 uppercase dark:text-white">Pages</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium flex-col flex gap-y-3">
+              <h2 className="mb-6 text-base font-bold text-white  uppercase dark:text-white underline">Pages</h2>
+              <ul className="text-white  dark:text-gray-400 font-medium flex-col flex gap-y-3">
                 {MENU_LINKS.map((menuItem, index) => (
                   <li key={index}>
-                    <Link target='_blank' href={menuItem.link} className="hover:underline hover:text-red-500">
+                    <Link target='_blank' href={menuItem.link} className="hover:underline  hover:text-gray-900">
                       {menuItem.title}
                     </Link>
                   </li>
@@ -63,10 +59,10 @@ export function Footer() {
             </div>
             {/* SOCIALS */}
             <div>
-              <h2 className="mb-6 text-base font-bold text-gray-900 uppercase dark:text-white">Socials</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium flex-col flex gap-y-3">
+              <h2 className="mb-6 text-base font-bold text-white  uppercase dark:text-white underline">Socials</h2>
+              <ul className="text-white  font-medium flex-col flex gap-y-3">
               {SOCIAL_LINKS.map((socialItem, index) => (
-              <Link key={index} href={socialItem.link} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <Link target='_blank' key={index} href={socialItem.link} className="text-white hover:underline  hover:text-gray-900 dark:hover:text-white">
                 {socialItem.title}
               </Link>
             ))}
@@ -76,12 +72,12 @@ export function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-white  sm:text-center dark:text-gray-400">
             © {currentYear} <Link href="https://lalaspizzeria.com/" className="hover:underline">Lalas Pizzeria</Link>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             {SOCIAL_LINKS.map((socialItem, index) => (
-              <Link key={index} href={socialItem.link} className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+              <Link key={index} href={socialItem.link} className="text-white  hover:text-gray-900 dark:hover:text-white ms-5">
                 {socialItem.title}
               </Link>
             ))}
