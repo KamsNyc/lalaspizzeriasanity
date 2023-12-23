@@ -36,6 +36,9 @@ function NavigationBar() {
         <div className="flex items-center gap-[32px]">
           {/* MENU LINKS */}
           <ul className="hidden md:flex items-center gap-[24px] xl:gap-[32px]">
+          <Link className="text-[15px] font-bold" href={"/"}>
+              Home
+            </Link>
             <Link className="text-[15px] font-bold" href={"/menu"}>
               Menu
             </Link>
@@ -45,9 +48,9 @@ function NavigationBar() {
             <Link className="text-[15px] font-bold" href={"/blog"}>
               Catering
             </Link>
-            <Link className="text-[15px] font-bold" href={"/blog"}>
+            {/* <Link className="text-[15px] font-bold" href={"/blog"}>
               Blog
-            </Link>
+            </Link> */}
           </ul>
 
           {/* BUTTONS */}
