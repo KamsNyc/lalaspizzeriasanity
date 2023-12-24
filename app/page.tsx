@@ -19,25 +19,25 @@ export default function Home() {
         <HeroSection />
       </section>
 
+      {/* DEALS/CATERING/SCHOOL DEALS/ALL */}
+      <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
+        {/* <PromotionsGrid /> */}
+        <AllPromotions />
+      </section>
+
       {/* MENU CONTAINER  */}
-      <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+      {/* <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
       <Menu />
+      </section> */}
+
+       {/* ORDER THROUGH APP SECTION */}
+       <section className=''>
+      <OnlineApps />
       </section>
 
       {/* INSTAGRAM CONTAINER */}
       <section className='px-2 lg:px-[80px] 2xl:px-[120px]'>
           <InstagramSection />
-      </section>
-
-      {/* ORDER THROUGH APP SECTION */}
-      <section className=''>
-      <OnlineApps />
-      </section>
-
-      {/* DEALS/CATERING/SCHOOL DEALS/ALL */}
-      <section className='px-2 lg:px-[80px] 2xl:px-[240px]'>
-        {/* <PromotionsGrid /> */}
-        <AllPromotions />
       </section>
 
       {/* FOOTER */}

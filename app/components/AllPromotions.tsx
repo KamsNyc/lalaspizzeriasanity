@@ -3,17 +3,17 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 function AllPromotions() {
   return (
-    <div>
+    <div className='mt-[80px]'>
     {/* HEADING */}
-    <h1 className="text-[48px] text-center md:text-left md:text-[64px] font-bold leading-[52px] md:leading-[72px] overflow-hidden ">
+    <h1 className="text-[48px] text-center md:text-[64px] font-bold leading-[52px] md:leading-[72px] overflow-hidden ">
         Promotions
       </h1>
     {/* PROIMOTION CONTAINER */}
-    <div className="flex justify-evenly py-2">
+    <div className="md:flex justify-evenly py-4">
       {/* DEALS */}
       <div className="mt-6 ">
         {/* HEADING */}
-      <h1 className='uppercase text-2xl md:text-3xl text-[#FE0000] tracking-wide font-bold pb-6'>Our Current Deals</h1>
+      <h1 className='uppercase text-center md:text-left text-2xl md:text-3xl text-[#FE0000] tracking-wide font-bold pb-4'>Our Current Deals</h1>
       {/* DEALS */}
       <div className="space-y-6 ">
       <Alert>
@@ -36,7 +36,7 @@ function AllPromotions() {
    {/* CATERING */}
    <div className="mt-6">
         {/* HEADING */}
-      <h1 className='uppercase text-2xl md:text-3xl text-[#FE0000] tracking-wide font-bold pb-6'>Our School Deals</h1>
+      <h1 className='uppercase text-center md:text-left text-2xl md:text-3xl text-[#FE0000] tracking-wide font-bold pb-4'>Our School Deals</h1>
       {/* DEALS */}
       <div className="space-y-6 ">
       <Alert>

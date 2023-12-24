@@ -7,17 +7,17 @@ function HeroSection() {
   return (
     <div className="md:pt-[50px] md:pb-[32px]">
       {/* LEFT TEXT/RIGHT IMAGE */}
-      <div className="md:flex item-center md:max-h-[480px] gap-[8px] md:gap-[4px]md:pt-[50px] md:pb-[80px]">
+      <div className="md:flex item-center md:max-h-[480px] gap-[8px] md:gap-[4px] md:pb-[80px]">
         {/* LEFT SIDE TEXT */}
         <div className="h-1/2 md:h-full md:w-1/2">
           <div className="flex h-full flex-col justify-center">
           {/* HEADING */}
-          <h1 className=" mt-[24px] md:mt-[30px] text-[47px] md:text-[60px] 2xl:text-[68px] font-bold leading-[52px] md:leading-[72px]">
-          Best Pizza in Queens Village, NY<br/>Lalas Pizzeria
+          <h1 className="text-center md:text-left mt-[24px] md:mt-[30px] text-[47px] md:text-[60px] 2xl:text-[68px] font-bold leading-[52px] md:leading-[72px]">
+          Best Pizza in <br/>Queens Village, NY <div className="text-red-500 underline">Lalas Pizzeria</div>
           </h1>
-          <p className="mt-3">Enjoy mouth-watering pizza with free delivery in Queens Village, NY.</p>
+          <p className="mt-3 text-center md:text-left">Enjoy mouth-watering pizza with free delivery in Queens Village, NY.</p>
           {/* BUTTONS */}
-          <div className="mt-[24px] md:mt-[48px] flex items-center gap-[24px] md:gap-[32px]">
+          <div className="mt-[24px] md:mt-[48px] flex items-center justify-center md:justify-normal gap-[24px] md:gap-[32px]">
             <Link
               href="https://clover.com/online-ordering/lalas-pizzeria-queens"
               target="_blank"

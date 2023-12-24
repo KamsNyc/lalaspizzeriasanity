@@ -45,7 +45,7 @@ function NavigationBar() {
             <Link className="text-[15px] font-bold" href={"/deals"}>
               Deals
             </Link>
-            <Link className="text-[15px] font-bold" href={"/blog"}>
+            <Link className="text-[15px] font-bold" href={"/catering"}>
               Catering
             </Link>
             {/* <Link className="text-[15px] font-bold" href={"/blog"}>

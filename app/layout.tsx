@@ -26,7 +26,7 @@ export default function RootLayout({
       <AnnouncementBar />
          <NavigationBar />
         {children}
-        <OrderOnline />
+        {/* <OrderOnline /> */}
         <Toaster />
         </body>
         {/* <Footer /> */}
