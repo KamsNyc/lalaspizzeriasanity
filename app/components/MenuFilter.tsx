@@ -27,7 +27,7 @@ export default function MenuFilter() {
   return (
     <div className="lg:flex-row">
       {/* FILTER */}
-      <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap">
+      <div className="lg:w-1/10 overflow-y-auto border md:border-none md:border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap">
         {menuCategories.map((category) => (
           <div
             key={category}
