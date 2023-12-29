@@ -58,7 +58,7 @@ const CateringMenu: React.FC = () => {
             <p className="text-gray-600 mb-4 sans">{item.description}</p>
             <div className="flex items-center justify-between">
               <p className="text-gray-800 font-bold">${item.price.toFixed(2)}</p>
-              <button className="bg-red-500 font-bold text-white px-4 py-2 rounded-full">What's in it?</button>
+              <button className="bg-red-500 font-bold text-white px-4 py-2 rounded-full">What&apos;s in it?</button>
             </div>
           </div>
         </div>

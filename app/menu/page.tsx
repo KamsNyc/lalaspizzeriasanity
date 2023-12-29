@@ -29,7 +29,7 @@ export default function Menu() {
         <h1 className=" text-center mt-[24px] md:mt-[48px] text-[48px] md:text-[64px] font-bold leading-[52px] md:leading-[72px] text-[#E32B2B]">
         Lala&apos;s Pizzeria Menu
           </h1>
-          <p className='max-w-[625px] md:max-w-[700px] font-medium sans text-[17px] leading-6 mt-[8px] text-center'>Explore Lala's Pizzeria Menu with a variety of delicious options. From classic Cheese Slice to Specialty Pies, Sandwiches, Pasta, and refreshing Beverages. Customize your pizza with a selection of premium toppings. Order now for a delightful dining experience.</p>
+          <p className='max-w-[625px] md:max-w-[700px] font-medium sans text-[17px] leading-6 mt-[8px] text-center'>Explore our Menu with a variety of delicious options. From classic Cheese Slice to Specialty Pies, Sandwiches, Pasta, and refreshing Beverages. Customize your pizza with a selection of premium toppings. Order now for a delightful dining experience.</p>
           </div>
       
       {/* FILTER */}

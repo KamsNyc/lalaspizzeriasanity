@@ -3,7 +3,7 @@ import React from 'react';
 function Deals() {
   return (
     <div className="deals-container">
-      <h2 className="deals-heading">Today's Specials</h2>
+      <h2 className="deals-heading">Today&apos;s Specials</h2>
 
       <div className="deal-item">
         <div className="deal-title">Combo Deal 1</div>
