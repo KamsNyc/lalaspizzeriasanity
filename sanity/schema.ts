@@ -9,7 +9,6 @@ import menu from './schemas/menu'
 import icons from './schemas/icon'
 import heroImage from './schemas/image'
 import env from './schemas/env'
-import product from './schemas/product'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [post, author, category, blockContent, socials, menu, icons, heroImage, env],
