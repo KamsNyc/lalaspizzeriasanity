@@ -14,6 +14,8 @@ interface MenuHeroItem {
   mainImage: string;
   alt: string;
   categories: { title: string }[];
+  description: string;
+  Price: string;
 }
 
 async function getMenuItemsById(itemId: string) {
@@ -30,6 +32,8 @@ async function getMenuItemsById(itemId: string) {
       title,
       "mainImage": mainImage.asset->url,
       link,
+      Price,
+      description,
       "alt": mainImage.alt,
       _createdAt,
       _updatedAt,
@@ -62,7 +66,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
           <div className="w-full h-full">
             <Image
               src={item.mainImage}
-              alt={item.alt}
+              alt={item.description}
               width={540}
               height={480}
               className="rounded-[10px] w-[540px] h-[480px] object-cover"
@@ -80,7 +84,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
               </h1>
             </div>
             <div className="pt-[16px] max-w-[540px] sans text-[#1B1B1B]/75 text-[20px] leading-[32px]">
-              <p>{item.alt}</p>
+              <p>{item.description}</p>
             </div>
             <div className="mt-[32px]">
               <DeliveryApps />

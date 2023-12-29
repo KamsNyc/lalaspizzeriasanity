@@ -1,8 +1,9 @@
 'use client'
 import { useState } from 'react';
 import MenuItemCard from '../components/MenuItemCard';
+import Link from 'next/link';
 
-export default function Menu() {
+export default function MenuFilter() {
   const menuCategories = [
     "All",
     "By The Slice",
@@ -25,15 +26,8 @@ export default function Menu() {
 
   return (
     <div className="lg:flex-row">
-        <div className=" flex flex-col items-center justify-center">
-        <h1 className=" text-center mt-[24px] md:mt-[48px] text-[48px] md:text-[64px] font-bold leading-[52px] md:leading-[72px] text-[#E32B2B]">
-        Lala&apos;s Pizzeria Menu
-          </h1>
-          <p className='max-w-[625px] md:max-w-[700px] font-medium sans text-[17px] leading-6 mt-[8px] text-center'>Explore Lala's Pizzeria Menu with a variety of delicious options. From classic Cheese Slice to Specialty Pies, Sandwiches, Pasta, and refreshing Beverages. Customize your pizza with a selection of premium toppings. Order now for a delightful dining experience.</p>
-          </div>
-      
       {/* FILTER */}
-      <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[48px] flex gap-x-2 whitespace-nowrap">
+      <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap">
         {menuCategories.map((category) => (
           <div
             key={category}
@@ -42,15 +36,13 @@ export default function Menu() {
               category === activeCategory ? 'red text-white' : 'border'
             }`}
           >
+            <Link href="/menu">
             {category}
+            </Link>
           </div>
         ))}
       </div>
-
-      {/* MENU ITEMS */}
-      <div className="w-full">
-        <MenuItemCard category={activeCategory} />
-      </div>
+      
     </div>
   );
 }

@@ -16,6 +16,11 @@ export default defineType({
       title: 'Title',
       type: 'string',
     }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    }),
     defineField(
         {
             title: 'price',
@@ -34,7 +39,7 @@ export default defineType({
         {
           name: 'alt',
           type: 'string',
-          title: 'Alternative Text',
+          title: 'Tags',
         }
       ]
     }),

@@ -36,7 +36,7 @@ const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <div className="bg-red-500 mt-[100px]">
+    <div className="red mt-[100px]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 md:mr-9">

@@ -3,9 +3,9 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 function AllPromotions() {
   return (
-    <div className='mt-[80px]'>
+    <div className='mt-[40px] md:mt-[80px]'>
     {/* HEADING */}
-    <h1 className="text-[48px] text-center md:text-[64px] font-bold leading-[52px] md:leading-[72px] overflow-hidden ">
+    <h1 className="text-[48px] text-center md:text-[64px] font-bold leading-[52px] md:leading-[72px] overflow-hidden underline ">
         Promotions
       </h1>
     {/* PROIMOTION CONTAINER */}

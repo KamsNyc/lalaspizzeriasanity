@@ -13,18 +13,19 @@ export async function getMenuItems() {
 
     return client.fetch(
         groq`*[_type == "menu"] {
-          _id,
-          title,
-          "mainImage": mainImage.asset->url,
-          link,
-          description,
-          "alt": mainImage.alt,
-          _createdAt,
-          _updatedAt,
-          "categories": categories[]->{
-            title
-                  }
-        
-        }`
+            _id,
+            title,
+            "mainImage": mainImage.asset->url,
+            link,
+            Price,
+            description,
+            "alt": mainImage.alt,
+            _createdAt,
+            _updatedAt,
+            "categories": categories[]->{
+              title
+                    }
+          
+          }`
     )
 }

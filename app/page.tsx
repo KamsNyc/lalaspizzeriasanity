@@ -8,6 +8,7 @@ import OrderOnline from './components/OrderOnline'
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import AllPromotions from './components/AllPromotions'
 import { Footer } from './components/Footer'
+import MenuFilter from './components/MenuFilter'
 
 
 export default function Home() {
@@ -17,6 +18,11 @@ export default function Home() {
       {/* HERO CONTAINER*/}
       <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
         <HeroSection />
+      </section>
+
+      {/* MENU FILTER */}
+      <section>
+        <MenuFilter />
       </section>
 
       {/* DEALS/CATERING/SCHOOL DEALS/ALL */}

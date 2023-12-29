@@ -7,7 +7,9 @@ interface MenuItem {
   _id: string;
   title: string;
   mainImage: string;
+  description: string;
   alt: string;
+  price: string;
   categories: { title: string }[];
 }
 
@@ -47,7 +49,7 @@ export default function AllMenuItems({ category }: { category: string }) {
                 {/* MENU IMAGE  */}
                 <Image
                   src={item.mainImage}
-                  alt={item.alt}
+                  alt={item.description}
                   width={296}
                   height={220}
                   priority
@@ -60,7 +62,7 @@ export default function AllMenuItems({ category }: { category: string }) {
                 {/* MENU ITEM HEADING DESCRIPTION */}
                 <h1 className='text-[#090909] text-[24px] font-bold'>{item.title}</h1>
                 {/* SHORT DESCRIPTION */}
-                <p className='text-[14px] leading-[22px] sans pt-[8px] px-2 md:px-2'>Tomato, Mozzarella, Olive, Sesame Oil, Spinach, Salami</p>
+                <p className='text-[14px] leading-[22px] sans pt-[8px] px-2 md:px-2'>{item.alt}</p>
               </div>
 
               {/* PRICE/SIZE CONTAINER */}
@@ -72,8 +74,8 @@ export default function AllMenuItems({ category }: { category: string }) {
                 </div>
                 {/* LARGE SIZE/PRICE */}
                 <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
-                  <h1 className='text-[18px] font-bold'>$17</h1>
-                  <p className="sans text-[14px] text-[#090909] font-[400]">16 inch <span className="text-[#1B1B1B]">pie</span></p>
+                <p className="sans text-[14px] text-[#090909] font-[400]">16 inch <span className="text-[#1B1B1B]">pie</span></p>
+                  <h1 className='text-[18px] font-bold'>{item.price}</h1>
                 </div>
               </div>
             </div>

@@ -21,6 +21,30 @@ const CateringMenu: React.FC = () => {
       price: 5.99,
       imageUrl: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
     },
+    {
+        name: 'Catering Item #1',
+        description: 'This is a test description for the catering menu, This is a test description for the catering menu',
+        price: 9.99,
+        imageUrl: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: 'Catering Item #2',
+        description: 'This is a test description for the catering menu, This is a test description for the catering menu',
+        price: 5.99,
+        imageUrl: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      },
+      {
+        name: 'Catering Item #1',
+        description: 'This is a test description for the catering menu, This is a test description for the catering menu',
+        price: 9.99,
+        imageUrl: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: 'Catering Item #2',
+        description: 'This is a test description for the catering menu, This is a test description for the catering menu',
+        price: 5.99,
+        imageUrl: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+      },
    
   ];
 

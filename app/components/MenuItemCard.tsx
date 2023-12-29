@@ -8,7 +8,9 @@ interface MenuItem {
   _id: string;
   title: string;
   mainImage: string;
+  description: string;
   alt: string;
+  Price: string;
   categories: { title: string }[];
 }
 
@@ -36,9 +38,9 @@ export default function MenuItemCard({ category }: { category: string }) {
 
   return (
     <main className='flex flex-col items-center md:mt-[32px]'>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2">
-      {items && items.slice(0, 6).map((item) => (
-      <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] ">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+      {items && items.slice(0, 42).map((item) => (
+      <div key={item._id} className="p-[16px] lg:p-[32px] max-w-[416px] md:max-w-[360px] max-h-[520px] hover:scale-110 duration-300 ease-in-out">
         {/* CARD */}
         <Link href={`/menu/${item._id}`}>
           <div  className="items-center text-center border rounded-[10px] cursor-pointer hover:scale-105 hover:shadow-sm duration-500 ease-out">
@@ -48,7 +50,7 @@ export default function MenuItemCard({ category }: { category: string }) {
      
           <Image
              src={item.mainImage}
-             alt='{item.alt}'
+             alt={item.description}
              width={296}
              height={220}
              priority
@@ -60,22 +62,22 @@ export default function MenuItemCard({ category }: { category: string }) {
            {/* HEADING CONTAINER */}
            <div className="pt-[24px] ">
               {/* MENU ITEM HEADING DESCRIPTION */}
-        <h1 className='text-[#090909] text-[24px] font-bold'>{item.title}</h1>
-           {/* SHORT DESCRIPTION */}
-           <p className='text-[14px] leading-[22px] sans pt-[8px] px-2 md:px-2'>Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</p>
+        <h1 className='text-[#090909] text-[24px] font-bold leading-6'>{item.title}</h1>
+           {/* SHORT DESCRIPTION TAGS */}
+           <p className='text-[14px] leading-[22px] sans pt-[8px] px-2 md:px-2'>{item.alt}</p>
            </div>
 
            {/* PRICE/SIZE CONTAINER */}
            <div className="">
               {/* MEDIUM SIZE/PRICE CONTAINER */}
-                <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
+                {/* <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
                   <h1 className='text-[18px] font-bold'>$12</h1>
                   <p className="sans text-[14px] text-[#090909]">14 inch <span className="text-[#1B1B1B]">pie</span></p>
-                </div>
+                </div> */}
               {/* LARGE SIZE/PRICE */}
-              <div className="flex flex-1 items-center justify-between px-[24px] py-[8px]">
-                  <h1 className='text-[18px] font-bold'>$17</h1>
-                  <p className="sans text-[14px] text-[#090909] font-[400]">16 inch <span className="text-[#1B1B1B]">pie</span></p>
+              <div className="flex flex-1 items-center justify-between px-[24px] py-[8px] mt-2 border-t">
+                  <p className="sans text-[14px] text-[#090909] font-semibold uppercase">Price<span className="text-[#1B1B1B]"></span></p>
+                  <h1 className='text-[18px] font-bold'>${item.Price}</h1>
                 </div>
            </div> 
           </div>
