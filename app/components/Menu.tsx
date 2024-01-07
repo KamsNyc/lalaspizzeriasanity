@@ -6,14 +6,13 @@ export default function Menu() {
   const menuCategories = [
     "All",
     "By The Slice",
-    "Regular Pizza Pies",
-    "Personal Cheese Pie",
+    "Build Your Own Pie",
     "Lala’s Specialty Pies",
-    "Pan Pizza",
-    "Thin Crust Pie",
     "Sandwiches",
+    "Sauce",
     "Calzone and Rolls",
     "Salads",
+    "Toppings",
     "Appetizers",
     "Pasta",
     "Beverages"
@@ -31,7 +30,7 @@ export default function Menu() {
       </div>
 
       {/* FILTER */}
-      <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[48px] flex gap-x-2 whitespace-nowrap">
+      <div className="lg:w-1/10 overflow-y-auto border-r p-4 mt-[48px] flex gap-x-2 whitespace-nowrap ">
         {menuCategories.map((category) => (
           <div
             key={category}

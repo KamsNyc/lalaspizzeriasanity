@@ -7,10 +7,7 @@ export default function MenuFilter() {
   const menuCategories = [
     "All",
     "By The Slice",
-    "Personal Cheese Pie",
-    "Pan Pizza",
-    "Thin Crust Pie",
-    "Regular Pizza Pies",
+    "Build Your Own Pie",
     "Lala’s Specialty Pies",
     "Sandwiches",
     "Sauce",
@@ -27,7 +24,7 @@ export default function MenuFilter() {
   return (
     <div className="lg:flex-row">
       {/* FILTER */}
-      <div className="lg:w-1/10 overflow-y-auto border md:border-none md:border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap">
+      <div className="lg:w-1/10 overflow-y-auto border md:border-none md:border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap items-center justify-none xl:justify-center">
         {menuCategories.map((category) => (
           <div
             key={category}
