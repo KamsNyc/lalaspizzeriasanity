@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { createClient, groq } from 'next-sanity';
 import { apiVersion, dataset, projectId, useCdn } from '../../sanity/env';
+import SocialIcons from "./SocialIcons";
 
 interface MenuHeroItem {
   _id: string;
@@ -62,32 +63,40 @@ function MenuHero({ itemId }: { itemId?: string }) {
   return (
     <div className="">
       {heroImage.map((item) => (
-        <div key={item._id} className="flex mt-[80px]">
+        <div key={item._id} className="block md:flex mt-[80px]">
           <div className="w-full h-full">
             <Image
               src={item.mainImage}
               alt={item.description}
-              width={540}
+              width={640}
               height={480}
-              className="rounded-[10px] w-[540px] h-[480px] object-cover"
+              className="rounded-[10px] w-[640px] h-[480px] object-cover"
             />
           </div>
-          <div className="w-full h-full">
+          <div className="w-full h-full mt-8 md:mt-0">
             <div className="">
               <Link href={`/menu`}>
                 <Badge variant="destructive" className="yellow text-black">{item.categories ? item.categories[0].title : "Lalas Pizzeria"}</Badge>
               </Link>
             </div>
             <div className="pt-[16px]">
-              <h1 className="text-[64px] font-bold leading-[74px]">
+              <h1 className="text-[64px] font-bold leading-[54px] uppercase">
                 {item.title}
               </h1>
             </div>
             <div className="pt-[16px] max-w-[540px] sans text-[#1B1B1B]/75 text-[20px] leading-[32px]">
               <p>{item.description}</p>
             </div>
+            {/* DELIVERY APPS */}
             <div className="mt-[32px]">
               <DeliveryApps />
+            </div>
+            {/* FOLLOW US ON SOCIAL MEDIA */}
+            <div className="">
+            <h3 className="text-[18px] mt-4 font-semibold uppercase">Follow us on:</h3>
+            <div className="mt-2">
+            <SocialIcons />
+            </div>
             </div>
           </div>
         </div>

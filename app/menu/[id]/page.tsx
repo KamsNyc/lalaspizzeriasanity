@@ -1,3 +1,5 @@
+import InstagramSection from '@/app/components/InstagramSection';
+import MenuFilter from '@/app/components/MenuFilter';
 import MenuHero from '@/app/components/MenuHero';
 import React from 'react'
 
@@ -17,15 +19,14 @@ interface PageProps {
         </div>
 
         {/* BANNER FREE DELIVERY + LALAS ORDERING */}
-        <div className="py-[80px]">
-          banner free delivery
+        <div className="pt-[20px] py-10 md:py-0">
+          <MenuFilter />
         </div>
 
-        {/* MENU FILTER */}
-        <div className="">
-          menu filter
+        {/* INSTAGRAM ITEMS */}
+        <div className=" mt-0 md:-mt-[40px]">
+          <InstagramSection />
         </div>
-        {id}
        
       </div>
     );

@@ -45,11 +45,6 @@ export default function Home() {
       <section className='px-2 lg:px-[80px] 2xl:px-[120px]'>
           <InstagramSection />
       </section>
-
-      {/* FOOTER */}
-      <section>
-        <Footer />
-      </section>
    </main>
   )
 }
