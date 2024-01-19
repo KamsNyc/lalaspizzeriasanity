@@ -20,7 +20,7 @@ const AllPromotions = () => {
 
       <div className="deal-item border-b pb-4 mb-4">
         <div className="deal-title text-xl font-semibold mb-2">Cheesy Delight</div>
-        <div className="deal-description text-gray-700 mb-2">Extra cheese on any pizza for just $1</div>
+        <div className="deal-description text-gray-700 mb-2">Extra cheese on any pizza for just $1&apos;</div>
         <div className="deal-price text-green-600">$1.00 extra</div>
       </div>
 
