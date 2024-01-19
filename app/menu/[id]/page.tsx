@@ -13,20 +13,21 @@ interface PageProps {
     const { id } = params;
     return (
       <div>
+        {/* BANNER FREE DELIVERY + LALAS ORDERING */}
+        <div className="pt-[20px] py-10 md:py-0">
+          <MenuFilter />
+        </div>
         {/* HEADER */}
         <div className="px-2 lg:px-[80px] 2xl:px-[240px]">
         <MenuHero itemId={id} />
         </div>
 
-        {/* BANNER FREE DELIVERY + LALAS ORDERING */}
-        <div className="pt-[20px] py-10 md:py-0">
-          <MenuFilter />
-        </div>
+        
 
         {/* INSTAGRAM ITEMS */}
-        <div className=" mt-0 md:-mt-[40px]">
+        {/* <div className=" mt-0 md:-mt-[40px]">
           <InstagramSection />
-        </div>
+        </div> */}
        
       </div>
     );

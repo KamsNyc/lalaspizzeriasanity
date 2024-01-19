@@ -63,14 +63,14 @@ function MenuHero({ itemId }: { itemId?: string }) {
   return (
     <div className="">
       {heroImage.map((item) => (
-        <div key={item._id} className="block md:flex mt-[80px]">
+        <div key={item._id} className="block md:flex gap-10 mt-[80px]">
           <div className="w-full h-full">
             <Image
               src={item.mainImage}
               alt={item.description}
-              width={640}
+              width={540}
               height={480}
-              className="rounded-[10px] w-[640px] h-[480px] object-cover"
+              className="rounded-[10px] w-[540px] h-[480px] object-cover"
             />
           </div>
           <div className="w-full h-full mt-8 md:mt-0">
@@ -93,7 +93,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
             </div>
             {/* FOLLOW US ON SOCIAL MEDIA */}
             <div className="">
-            <h3 className="text-[18px] mt-4 font-semibold uppercase">Follow us on:</h3>
+            <h3 className="text-[18px] mt-10 font-semibold uppercase">Share the pizza with us:</h3>
             <div className="mt-2">
             <SocialIcons />
             </div>

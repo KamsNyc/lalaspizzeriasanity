@@ -2,25 +2,25 @@ import React from 'react';
 
 function Deals() {
   return (
-    <div className="deals-container">
-      <h2 className="deals-heading">Today&apos;s Specials</h2>
+    <div className="deals-container p-8 bg-gray-50">
+      <h2 className="text-3xl font-bold mb-6">Today's Specials</h2>
 
-      <div className="deal-item">
-        <div className="deal-title">Combo Deal 1</div>
-        <div className="deal-description">Get 2 slices of pizza + a drink</div>
-        <div className="deal-price">$9.99</div>
+      <div className="deal-item border-b pb-4 mb-4">
+        <div className="deal-title text-xl font-semibold mb-2">Combo Deal 1</div>
+        <div className="deal-description text-gray-700 mb-2">Get 2 slices of pizza + a drink</div>
+        <div className="deal-price text-green-600">$9.99</div>
       </div>
 
-      <div className="deal-item">
-        <div className="deal-title">Family Pack</div>
-        <div className="deal-description">Large pizza + garlic knots + 2 drinks</div>
-        <div className="deal-price">$24.99</div>
+      <div className="deal-item border-b pb-4 mb-4">
+        <div className="deal-title text-xl font-semibold mb-2">Family Pack</div>
+        <div className="deal-description text-gray-700 mb-2">Large pizza + garlic knots + 2 drinks</div>
+        <div className="deal-price text-green-600">$24.99</div>
       </div>
 
-      <div className="deal-item">
-        <div className="deal-title">Cheesy Delight</div>
-        <div className="deal-description">Extra cheese on any pizza for just $1</div>
-        <div className="deal-price">$1.00 extra</div>
+      <div className="deal-item border-b pb-4 mb-4">
+        <div className="deal-title text-xl font-semibold mb-2">Cheesy Delight</div>
+        <div className="deal-description text-gray-700 mb-2">Extra cheese on any pizza for just $1</div>
+        <div className="deal-price text-green-600">$1.00 extra</div>
       </div>
 
       {/* Add more deal items as needed */}

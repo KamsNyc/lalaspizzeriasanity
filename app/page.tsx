@@ -9,6 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import AllPromotions from './components/AllPromotions'
 import { Footer } from './components/Footer'
 import MenuFilter from './components/MenuFilter'
+import Badges from './components/Badges'
 
 
 export default function Home() {
@@ -18,6 +19,11 @@ export default function Home() {
       {/* HERO CONTAINER*/}
       <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
         <HeroSection />
+      </section>
+      
+       {/* CERTIFICATIONS */}
+    <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+        <Badges />
       </section>
 
       {/* MENU FILTER */}
