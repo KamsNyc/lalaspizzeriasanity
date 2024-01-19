@@ -5,7 +5,7 @@ function Badges() {
   return (
         <div className='w-full h-32 flex items-center relative'>
             {/* ICON 1 */}
-            <div className=" scale-50 absolute top-0">
+            <div className=" scale-50 hidden md:absolute top-0">
       <link rel="stylesheet" href="https://cdn6.localdatacdn.com/badges/restaurantji/css/badge-v4.0.css?v=69836" />
 
       <div className="w-[25px] h-[25px]">
@@ -23,7 +23,7 @@ function Badges() {
     </div>
     </div>
     {/* ICON 2 */}
-    <div className='scale-50 absolute left-[25%] md:left-[10%]'>
+    <div className='scale-50 hidden md:absolute left-[25%] md:left-[10%]'>
       <link rel="stylesheet" href="https://cdn6.localdatacdn.com/badges/restaurantji/css/circle_v20.css?v=7859" />
 
       <div id="circle_v20_wrap" className="w-[250px] h-[250px]">
@@ -36,7 +36,7 @@ function Badges() {
       </div>
     </div>
     {/* ICON 3 */}
-    <div className="scale-50 absolute left-[53%] md:left-[22%]">
+    <div className="scale-50 flex md:absolute left-[53%] md:left-[22%]">
       <link rel="stylesheet" href="https://cdn6.localdatacdn.com/badges/restaurantji/css/badge-v3.3.css?v=77313" />
 
       <div id="circle_v3" className="w-[294px] h-[227px]">
