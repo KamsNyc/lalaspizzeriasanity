@@ -23,7 +23,7 @@ function Badges() {
     </div>
     </div>
     {/* ICON 2 */}
-    <div className='scale-50 hidden md:absolute left-[25%] md:left-[10%]'>
+    <div className='scale-50 flex md:absolute left-[25%] md:left-[10%]'>
       <link rel="stylesheet" href="https://cdn6.localdatacdn.com/badges/restaurantji/css/circle_v20.css?v=7859" />
 
       <div id="circle_v20_wrap" className="w-[250px] h-[250px]">
