@@ -17,7 +17,7 @@ function Badges() {
           </div>
 
           <div id="circletype_v4_brand_name" className="autoFontSize text-[21.95px]">
-            <a target="_blank" href="https://www.restaurantji.com/ny/queens/lalas-pizzeria/" className="ahref_emprty_area">Lala's Pizzeria</a>
+            <a target="_blank" href="https://www.restaurantji.com/ny/queens/lalas-pizzeria/" className="ahref_emprty_area">Lala&apos;s Pizzeria</a>
           </div>
         </div>
     </div>
@@ -29,7 +29,7 @@ function Badges() {
       <div id="circle_v20_wrap" className="w-[250px] h-[250px]">
         <div style={{ width: '100%', height: '100%' }} id="circle_v20">
           <div id="circletype_v20_brand_name" className="autoFontSize text-[13.5px]">
-            <a target="_blank" href="https://www.restaurantji.com/ny/queens/lalas-pizzeria-/" className="ahref_emprty_area" id="ahref_v20_brand_name">Lala's Pizzeria</a>
+            <a target="_blank" href="https://www.restaurantji.com/ny/queens/lalas-pizzeria-/" className="ahref_emprty_area" id="ahref_v20_brand_name">Lala&apos;s Pizzeria</a>
           </div>
           <a href="https://www.restaurantji.com" target="_blank" id="rewards_link">Restaurantji</a>
         </div>
@@ -43,7 +43,7 @@ function Badges() {
         <div className="rb_flex rb_top">
           <a target="_blank" href="https://www.restaurantji.com/ny/queens/lalas-pizzeria-/" style={{ color: '#000' }}>
             <div className="circletype_v3_brand_name" id="circletype_v3_brand_name" style={{ top: 'calc(50% - 12px * 0.75)', fontSize: 'calc(18px * 0.75)' }}>
-              Lala's Pizzeria
+              Lala&apos;s Pizzeria
             </div>
           </a>
           <div className="arc-heading arc-heading__bottom">

@@ -3,7 +3,7 @@ import React from 'react';
 function Deals() {
   return (
     <div className="deals-container p-8 bg-gray-50">
-      <h2 className="text-3xl font-bold mb-6">Today's Specials</h2>
+      <h2 className="text-3xl font-bold mb-6">Specials</h2>
 
       <div className="deal-item border-b pb-4 mb-4">
         <div className="deal-title text-xl font-semibold mb-2">Combo Deal 1</div>
