@@ -7,11 +7,11 @@ function AnnouncementBar() {
    <div className="w-full h-[48px] red flex items-center justify-between text-white px-4 md:px-[32px]">
       {/* LEFT SIDE */}
         <div className='flex items-center'>
-          <h1 className="text-[15px] md:text-[16px] font-semibold leading-[18px] text-center md:leading-normal md:text-left">Queens Village</h1>
+          <h1 className="text-[12px] md:text-[16px] font-semibold leading-[18px] text-center md:leading-normal md:text-left">Queens Village</h1>
         </div>
         {/* MIDDLE SIDE */}
         <div className="text-center md:flex items-center">
-            <p className='sans text-[14px] whitespace-nowrap md:border-r font-medium border-[#FFFFFF] px-4 md:px-[24px]'>Opened daily 11:00AM - 10:00PM</p>
+            <p className='sans text-[10px] md:text-[14px] whitespace-nowrap md:border-r font-medium border-[#FFFFFF] px-4 md:px-[24px]'>Opened daily 11:00AM - 10:00PM</p>
 
             <p className='sans text-[14px] px-[8px] md:px-[24px] font-medium'>(347) 426 5287</p>
           </div>
