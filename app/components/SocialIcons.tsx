@@ -35,7 +35,7 @@ export default function SocialIcons() {
             alt={item.alt}
             width={24}
             height={24}
-            className='object-cover min-w-[24px] min-h-[24px] w-full h-full cursor-pointer'
+            className='object-cover min-w-[34px] min-h-[34px] w-full h-full cursor-pointer'
           />
           </Link>
         </div>
