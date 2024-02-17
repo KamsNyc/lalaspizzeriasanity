@@ -23,6 +23,8 @@ export default function MenuFilter() {
 
   return (
     <div className="lg:flex-row">
+      {/* MENU TEXT */}
+      <h1 className="heading uppercase font-bold text-xl text-center">MENU categories</h1>
       {/* FILTER */}
       <div className="lg:w-1/10 overflow-y-auto border md:border-none md:border-r p-4 mt-[16px] flex gap-x-2 whitespace-nowrap items-center justify-none xl:justify-center">
         {menuCategories.map((category) => (

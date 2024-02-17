@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       
        {/* CERTIFICATIONS */}
-    <section className='px-2 lg:px-[120px] 2xl:px-[240px]'>
+    <section className='hidden md:block px-2 lg:px-[120px] 2xl:px-[240px]'>
         <Badges />
       </section>
 
