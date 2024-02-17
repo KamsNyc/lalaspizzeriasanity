@@ -63,7 +63,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
   return (
     <div className="">
       {heroImage.map((item) => (
-        <div key={item._id} className="block md:flex gap-10 mt-[80px]">
+        <div key={item._id} className="block md:flex gap-10 mt-[20px]">
           <div className="w-full h-full">
             <Image
               src={item.mainImage}

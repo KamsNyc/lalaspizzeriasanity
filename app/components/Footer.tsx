@@ -9,14 +9,14 @@ const MENU_LINKS = [
   },
   {
     title: "Menu",
-    link: "#menu",
+    link: "/menu",
   },
   {
     title: "Catering",
     link: "/catering",
   },
   {
-    title: "Online Apps",
+    title: "Online Ordering",
     link: "https://food.google.com/chooseprovider?restaurantId=/g/11vbwq39_x&g2lbs=ANTchaNxSBRlDn2qKuTvyU4g-Ivvg7iczk30j1ISiviQ-sJllvIEhon3lgbD6Z3AywRq0Gr_WBS_t3hM4__Ncp_iBlLw1l9hzzei8ZaDxmumlvdkDO6E-WuGDui5LhR3IzJRY-M2P_GggJC9h6F-P-QMmr5Sji5BeA%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search&gei=iSWHZZPVBYeh5NoPhpeaqA4&ei=iSWHZZPVBYeh5NoPhpeaqA4&fo_s=OA&opi=89978449&orderType=1",
   },
 ];
