@@ -45,7 +45,7 @@ export default function MenuItemCard({ category }: { category: string }) {
         <Link href={`/menu/${item._id}`}>
           <div  className="items-center text-center border rounded-[10px] cursor-pointer hover:scale-105 hover:shadow-sm duration-500 ease-out">
             {/* MENU IMAGE CONTAINER*/}
-            <div className="h-[220px] md:h-[220px] md:w-[292px]  flex items-center gap-4 justify-center rounded-[10px] overflow-hidden">
+            <div className="h-[220px] md:h-[220px] md:w-[292px]  flex items-center  justify-center rounded-[10px] overflow-hidden">
               {/* MENU IMAGE  */}
      
           <Image

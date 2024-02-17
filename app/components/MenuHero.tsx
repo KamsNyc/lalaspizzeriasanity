@@ -80,7 +80,7 @@ function MenuHero({ itemId }: { itemId?: string }) {
               </Link>
             </div>
             <div className="pt-[16px]">
-              <h1 className="text-[64px] font-bold leading-[54px] uppercase">
+              <h1 className="text-[48px] md:text-[64px] font-bold leading-[44px] md:leading-[54px] uppercase">
                 {item.title}
               </h1>
             </div>
