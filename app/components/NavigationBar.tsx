@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,6 +93,7 @@ function NavigationBar() {
                 </div>
               </SheetTrigger>
               <SheetContent>
+              <ScrollArea className=" px-2 h-full w-full rounded-md">
                 <SheetHeader>
                   <SheetTitle className="font-bold text-black uppercase">Navigation</SheetTitle>
                   <SheetDescription className="text-center font-medium">
@@ -125,11 +127,11 @@ function NavigationBar() {
   {/* Social Media Links Section */}
   <section className="border-b pb-4 mb-4">
     <h2 className="text-lg font-semibold mb-2 text-red-600">Social Media</h2>
-    <div className="flex justify-center gap-4">
-      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+    <div className="flex flex-col md:flex-row justify-center gap-4">
+      <Link href="#" className="block w-full md:w-auto p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black mb-2 md:mb-0">
         Instagram
       </Link>
-      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+      <Link href="#" className="block w-full md:w-auto p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
         Facebook
       </Link>
     </div>
@@ -138,7 +140,7 @@ function NavigationBar() {
   {/* Food Ordering Apps Section */}
   <section className="border-b pb-4 mb-4">
     <h2 className="text-lg font-semibold mb-2 text-red-600">Food Ordering Apps</h2>
-    <div className="grid grid-cols-3 justify-center gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
       <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
         Ubereats
       </Link>
@@ -154,11 +156,11 @@ function NavigationBar() {
   {/* Order Today Section */}
   <section className="border-b pb-4 mb-4">
     <h2 className="text-lg font-semibold mb-2 text-red-600">Order Today</h2>
-    <div className="flex justify-center">
-      <div className="w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black mr-2">
+    <div className="flex flex-col md:flex-row justify-center md:justify-start">
+      <div className="w-full md:w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black mb-2 md:mb-0 md:mr-2">
         (347) 426 5287
       </div>
-      <div className="w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black ml-2">
+      <div className="w-full md:w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black">
         Order Online
       </div>
     </div>
@@ -173,8 +175,10 @@ function NavigationBar() {
       </div>
     </div>
   </section>
+
 </SheetDescription>
                 </SheetHeader>
+                </ScrollArea>
               </SheetContent>
             </Sheet>
           </div>
