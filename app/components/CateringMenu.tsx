@@ -49,21 +49,24 @@ const CateringMenu: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-12 mt-8">
-      {cateringItems.map((item, index) => (
-        <div key={index} className="max-w-lg w-full bg-white rounded-lg overflow-hidden shadow-lg">
-          <img className="w-full h-40 object-cover object-center" src={item.imageUrl} alt={item.name} />
-          <div className="p-6">
-            <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
-            <p className="text-gray-600 mb-4 sans">{item.description}</p>
-            <div className="flex items-center justify-between">
-              <p className="text-gray-800 font-bold">${item.price.toFixed(2)}</p>
-              <button className="bg-red-500 font-bold text-white px-4 py-2 rounded-full">What&apos;s in it?</button>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div className="flex items-center justify-center py-48">
+      <h1 className='text-[64px] md:text-[80px] font-bold'>CATERING MENU COMING SOON</h1>
     </div>
+    // <div className="flex flex-wrap justify-center gap-12 mt-8">
+    //   {cateringItems.map((item, index) => (
+    //     <div key={index} className="max-w-lg w-full bg-white rounded-lg overflow-hidden shadow-lg">
+    //       <img className="w-full h-40 object-cover object-center" src={item.imageUrl} alt={item.name} />
+    //       <div className="p-6">
+    //         <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
+    //         <p className="text-gray-600 mb-4 sans">{item.description}</p>
+    //         <div className="flex items-center justify-between">
+    //           <p className="text-gray-800 font-bold">${item.price.toFixed(2)}</p>
+    //           <button className="bg-red-500 font-bold text-white px-4 py-2 rounded-full">What&apos;s in it?</button>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   ))}
+    // </div>
   );
 };
 
