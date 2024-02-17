@@ -19,7 +19,7 @@ function HeroSection() {
           {/* BUTTONS */}
           <div className="mt-[24px] md:mt-[48px] flex items-center justify-center md:justify-normal gap-[24px] md:gap-[32px]">
             <Link
-              href="https://clover.com/online-ordering/lalas-pizzeria-queens"
+              href="/menu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[15px] font-bold text-white red px-[20px] md:px-[50px] py-[16px] md:py-[12px] rounded-[10px]"

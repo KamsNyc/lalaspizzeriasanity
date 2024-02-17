@@ -49,8 +49,11 @@ const CateringMenu: React.FC = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center py-48">
-      <h1 className='text-[64px] md:text-[80px] font-bold'>CATERING MENU COMING SOON</h1>
+    <div className="flex items-center justify-center py-24 md:py-48">
+      <div className="flex flex-col items-center">
+      <h1 className='text-[24px] md:text-[80px] font-bold'>CATERING MENU COMING SOON</h1>
+      <span className='uppercase text-[24px] md:text-[80px] font-bold'>Thank you</span>
+      </div>
     </div>
     // <div className="flex flex-wrap justify-center gap-12 mt-8">
     //   {cateringItems.map((item, index) => (

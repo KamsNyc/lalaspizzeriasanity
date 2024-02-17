@@ -10,7 +10,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +36,7 @@ function NavigationBar() {
         <div className="flex items-center gap-[32px]">
           {/* MENU LINKS */}
           <ul className="hidden md:flex items-center gap-[24px] xl:gap-[32px]">
-          <Link className="text-[15px] font-bold" href={"/"}>
+            <Link className="text-[15px] font-bold" href={"/"}>
               Home
             </Link>
             <Link className="text-[15px] font-bold" href={"/menu"}>
@@ -71,38 +71,112 @@ function NavigationBar() {
             </Link>
             {/* HAMBURGER MENU FOR MOBILE */}
             <Sheet>
-  <SheetTrigger className="md:hidden">
-  <div className="md:hidden flex ml-2 md:ml-0">
-              <h2>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-7 w-7"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </h2>
-            </div>
+              <SheetTrigger className="md:hidden">
+                <div className="md:hidden flex ml-2 md:ml-0">
+                  <h2>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="h-7 w-7"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 12h16m-7 6h7"
+                      />
+                    </svg>
+                  </h2>
+                </div>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle className="font-bold text-black uppercase">Navigation</SheetTitle>
+                  <SheetDescription className="text-center font-medium">
+  {/* Menu Links Section */}
+  <section className="border-b pb-4 mb-4 ">
+    <h2 className="text-lg text-red-600 font-semibold mb-2">Hello from Lala&apos;s Pizzeria</h2>
+    <ul className="divide-y divide-gray-200">
+      <li className="py-2">
+        <Link href={"/"} className="block w-full p-3 rounded-md bg-gray-200 hover:bg-red-600 text-black">
+          Home
+        </Link>
+      </li>
+      <li className="py-2">
+        <Link href={"/menu"} className="block w-full p-3 rounded-md bg-gray-200 hover:bg-red-600 text-black">
+          Menu
+        </Link>
+      </li>
+      <li className="py-2">
+        <Link href={"/deals"} className="block w-full p-3 rounded-md bg-gray-200 hover:bg-red-600 text-black">
+          Deals
+        </Link>
+      </li>
+      <li className="pt-2">
+        <Link href={"/catering"} className="block w-full p-3 rounded-md bg-gray-200 hover:bg-red-600 text-black">      
+          Catering
+        </Link>
+      </li>
+    </ul>
+  </section>
 
-  </SheetTrigger>
-  <SheetContent >
-    <SheetHeader>
-      <SheetTitle>Navigation</SheetTitle>
-      <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
-      </SheetDescription>
-    </SheetHeader>
-  </SheetContent>
-</Sheet>
-            
+  {/* Social Media Links Section */}
+  <section className="border-b pb-4 mb-4">
+    <h2 className="text-lg font-semibold mb-2 text-red-600">Social Media</h2>
+    <div className="flex justify-center gap-4">
+      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+        Instagram
+      </Link>
+      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+        Facebook
+      </Link>
+    </div>
+  </section>
+
+  {/* Food Ordering Apps Section */}
+  <section className="border-b pb-4 mb-4">
+    <h2 className="text-lg font-semibold mb-2 text-red-600">Food Ordering Apps</h2>
+    <div className="grid grid-cols-3 justify-center gap-4">
+      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+        Ubereats
+      </Link>
+      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+        Grubhub
+      </Link>
+      <Link href="#" className="block w-full p-3 rounded-md bg-gray-200 hover:bg-yellow-400 text-black">
+        Doordash
+      </Link>
+    </div>
+  </section>
+
+  {/* Order Today Section */}
+  <section className="border-b pb-4 mb-4">
+    <h2 className="text-lg font-semibold mb-2 text-red-600">Order Today</h2>
+    <div className="flex justify-center">
+      <div className="w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black mr-2">
+        (347) 426 5287
+      </div>
+      <div className="w-1/2 p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black ml-2">
+        Order Online
+      </div>
+    </div>
+  </section>
+
+  {/* Current Deals Section */}
+  <section>
+    <h2 className="text-lg font-semibold mb-2 text-red-600">Current Deals</h2>
+    <div className="flex justify-center">
+      <div className="w-full p-3 rounded-md cursor-pointer bg-gray-200 hover:bg-red-600 text-black">
+        Special Offers Here
+      </div>
+    </div>
+  </section>
+</SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
